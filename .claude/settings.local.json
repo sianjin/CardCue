@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(claude:*)",
+      "WebSearch",
+      "Bash(git clone:*)",
+      "Bash(python3 *)",
+      "Bash(mkdir -p /Users/sianjin/Documents/Products/CardMap/CardMap/CardMap.xcodeproj)",
+      "Bash(mkdir -p /Users/sianjin/Documents/Products/CardMap/CardMap/CardMap/Sources/Models)",
+      "Bash(mkdir -p /Users/sianjin/Documents/Products/CardMap/CardMap/CardMap/Sources/Views)",
+      "Bash(mkdir -p /Users/sianjin/Documents/Products/CardMap/CardMap/CardMap/Sources/ViewModels)",
+      "Bash(mkdir -p /Users/sianjin/Documents/Products/CardMap/CardMap/CardMap/Resources)",
+      "Bash(xcodebuild -project CardMap.xcodeproj -scheme CardMap -destination 'platform=iOS Simulator,name=iPhone 16' -configuration Debug build)",
+      "Bash(xcodebuild -project CardMap.xcodeproj -scheme CardMap -destination 'generic/platform=iOS' -configuration Debug build)",
+      "Bash(xcodebuild -version)",
+      "Bash(xcodebuild -showsdks)",
+      "Bash(xcodebuild -project CardMap.xcodeproj -scheme CardMap -sdk iphoneos26.5 -configuration Debug build CODE_SIGN_IDENTITY=\"\" CODE_SIGNING_REQUIRED=NO)",
+      "Bash(xcodebuild -project CardMap.xcodeproj -scheme CardMap -sdk iphoneos26.5 -configuration Debug ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY=\"\" CODE_SIGNING_REQUIRED=NO SKIP_INSTALL=YES)",
+      "Bash(xcrun -f swiftc)",
+      "Bash(xcrun --sdk iphoneos --show-sdk-path)",
+      "Bash(swift render_icon.swift)",
+      "Bash(sips -g all \"/Users/sianjin/Documents/Products/CardMap/CardMap/CardMap/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png\")",
+      "Bash(gh auth *)",
+      "Bash(gh repo *)",
+      "Bash(sudo mkdir -p /Users/sianjin/.config/gh)",
+      "Bash(sudo chown -R sianjin /Users/sianjin/.config)",
+      "Read(//Users/sianjin/.config/**)",
+      "Bash(git init *)",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}

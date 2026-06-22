@@ -1,0 +1,18 @@
+[
+  { "cardName": "Discover it Cash Back", "quarter": "2025Q1", "categories": ["Dining", "Drug Stores"] },
+  { "cardName": "Discover it Cash Back", "quarter": "2025Q2", "categories": ["Gas", "Home Improvement"] },
+  { "cardName": "Discover it Cash Back", "quarter": "2025Q3", "categories": ["Groceries"] },
+  { "cardName": "Discover it Cash Back", "quarter": "2025Q4", "categories": ["Amazon", "Wholesale Clubs"] },
+  { "cardName": "Discover it Cash Back", "quarter": "2026Q1", "categories": ["Dining", "Drug Stores"] },
+  { "cardName": "Discover it Cash Back", "quarter": "2026Q2", "categories": ["Gas", "Home Improvement"] },
+  { "cardName": "Discover it Cash Back", "quarter": "2026Q3", "categories": ["Gas"] },
+  { "cardName": "Discover it Cash Back", "quarter": "2026Q4", "categories": ["Amazon", "Wholesale Clubs"] },
+  { "cardName": "Chase Freedom Flex", "quarter": "2025Q1", "categories": ["Groceries", "Fitness"] },
+  { "cardName": "Chase Freedom Flex", "quarter": "2025Q2", "categories": ["Amazon", "Hotels"] },
+  { "cardName": "Chase Freedom Flex", "quarter": "2025Q3", "categories": ["Gas", "Entertainment"] },
+  { "cardName": "Chase Freedom Flex", "quarter": "2025Q4", "categories": ["Wholesale Clubs"] },
+  { "cardName": "Chase Freedom Flex", "quarter": "2026Q1", "categories": ["Groceries", "Fitness"] },
+  { "cardName": "Chase Freedom Flex", "quarter": "2026Q2", "categories": ["Amazon", "Hotels", "Streaming"] },
+  { "cardName": "Chase Freedom Flex", "quarter": "2026Q3", "categories": ["Gas", "Entertainment"] },
+  { "cardName": "Chase Freedom Flex", "quarter": "2026Q4", "categories": ["Wholesale Clubs"] }
+]

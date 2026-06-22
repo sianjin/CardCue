@@ -1,0 +1,74 @@
+[
+  { "cardName": "Costco Anywhere Visa by Citi", "category": "Gas", "rewardText": "5%" },
+  { "cardName": "Costco Anywhere Visa by Citi", "category": "Dining", "rewardText": "3%" },
+  { "cardName": "Costco Anywhere Visa by Citi", "category": "Flights", "rewardText": "3%" },
+  { "cardName": "Costco Anywhere Visa by Citi", "category": "Everything Else", "rewardText": "2%" },
+
+  { "cardName": "Fidelity Rewards Visa", "category": "Everything Else", "rewardText": "2%" },
+
+  { "cardName": "Chase Sapphire Preferred", "category": "Dining", "rewardText": "3x" },
+  { "cardName": "Chase Sapphire Preferred", "category": "Flights", "rewardText": "3x" },
+  { "cardName": "Chase Sapphire Preferred", "category": "Hotels", "rewardText": "3x" },
+  { "cardName": "Chase Sapphire Preferred", "category": "Car Rentals", "rewardText": "3x" },
+  { "cardName": "Chase Sapphire Preferred", "category": "Rideshare", "rewardText": "3x" },
+  { "cardName": "Chase Sapphire Preferred", "category": "Travel Portal", "rewardText": "5x" },
+  { "cardName": "Chase Sapphire Preferred", "category": "Groceries", "rewardText": "3x" },
+  { "cardName": "Chase Sapphire Preferred", "category": "Streaming", "rewardText": "3x" },
+  { "cardName": "Chase Sapphire Preferred", "category": "Everything Else", "rewardText": "1x" },
+
+  { "cardName": "Chase Sapphire Reserve", "category": "Dining", "rewardText": "3x" },
+  { "cardName": "Chase Sapphire Reserve", "category": "Flights", "rewardText": "3x" },
+  { "cardName": "Chase Sapphire Reserve", "category": "Hotels", "rewardText": "3x" },
+  { "cardName": "Chase Sapphire Reserve", "category": "Car Rentals", "rewardText": "3x" },
+  { "cardName": "Chase Sapphire Reserve", "category": "Rideshare", "rewardText": "3x" },
+  { "cardName": "Chase Sapphire Reserve", "category": "Travel Portal", "rewardText": "10x" },
+  { "cardName": "Chase Sapphire Reserve", "category": "Everything Else", "rewardText": "1x" },
+
+  { "cardName": "Chase Freedom Flex", "category": "Everything Else", "rewardText": "1%" },
+
+  { "cardName": "Chase Freedom Unlimited", "category": "Dining", "rewardText": "3%" },
+  { "cardName": "Chase Freedom Unlimited", "category": "Flights", "rewardText": "5%" },
+  { "cardName": "Chase Freedom Unlimited", "category": "Everything Else", "rewardText": "1.5%" },
+
+  { "cardName": "Discover it Cash Back", "category": "Everything Else", "rewardText": "1%" },
+
+  { "cardName": "PayPal Cashback Mastercard", "category": "PayPal Purchases", "rewardText": "3%" },
+  { "cardName": "PayPal Cashback Mastercard", "category": "Everything Else", "rewardText": "1.5%" },
+
+  { "cardName": "Apple Card", "category": "Apple Purchases", "rewardText": "3%" },
+  { "cardName": "Apple Card", "category": "Everything Else", "rewardText": "1%" },
+
+  { "cardName": "Citi Double Cash", "category": "Everything Else", "rewardText": "2%" },
+
+  { "cardName": "Wells Fargo Active Cash", "category": "Everything Else", "rewardText": "2%" },
+
+  { "cardName": "Amex Blue Cash Preferred", "category": "Groceries", "rewardText": "6%" },
+  { "cardName": "Amex Blue Cash Preferred", "category": "Streaming", "rewardText": "6%" },
+  { "cardName": "Amex Blue Cash Preferred", "category": "Transit & Commute", "rewardText": "3%" },
+  { "cardName": "Amex Blue Cash Preferred", "category": "Gas", "rewardText": "3%" },
+  { "cardName": "Amex Blue Cash Preferred", "category": "Everything Else", "rewardText": "1%" },
+
+  { "cardName": "Amex Blue Cash Everyday", "category": "Groceries", "rewardText": "3%" },
+  { "cardName": "Amex Blue Cash Everyday", "category": "Gas", "rewardText": "2%" },
+  { "cardName": "Amex Blue Cash Everyday", "category": "Online Shopping", "rewardText": "2%" },
+  { "cardName": "Amex Blue Cash Everyday", "category": "Everything Else", "rewardText": "1%" },
+
+  { "cardName": "Amex Gold Card", "category": "Dining", "rewardText": "4x" },
+  { "cardName": "Amex Gold Card", "category": "Groceries", "rewardText": "4x" },
+  { "cardName": "Amex Gold Card", "category": "Flights", "rewardText": "3x" },
+  { "cardName": "Amex Gold Card", "category": "Everything Else", "rewardText": "1x" },
+
+  { "cardName": "Capital One Venture", "category": "Travel Portal", "rewardText": "5x" },
+  { "cardName": "Capital One Venture", "category": "Everything Else", "rewardText": "2x" },
+
+  { "cardName": "Capital One Venture X", "category": "Travel Portal", "rewardText": "10x" },
+  { "cardName": "Capital One Venture X", "category": "Flights", "rewardText": "5x" },
+  { "cardName": "Capital One Venture X", "category": "Hotels", "rewardText": "5x" },
+  { "cardName": "Capital One Venture X", "category": "Everything Else", "rewardText": "2x" },
+
+  { "cardName": "Capital One Savor", "category": "Dining", "rewardText": "4%" },
+  { "cardName": "Capital One Savor", "category": "Entertainment", "rewardText": "4%" },
+  { "cardName": "Capital One Savor", "category": "Groceries", "rewardText": "3%" },
+  { "cardName": "Capital One Savor", "category": "Streaming", "rewardText": "8%" },
+  { "cardName": "Capital One Savor", "category": "Everything Else", "rewardText": "1%" }
+]
