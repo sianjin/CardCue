@@ -4,6 +4,11 @@
 
 Rules for maintaining `reward_rules.json` and `quarterly_categories.json`.
 
+## Category Display Rules
+
+- "Everything Else" must always appear at the bottom of the Quick Reference list, regardless of user drag order. This is enforced in `CategoryOrderStore.sync()` — do not remove that logic.
+- "Everything Else" must always be the last entry in `KnownCards.canonicalCategories`.
+
 ## Card Name Rules
 
 Each real-world credit card must have exactly one canonical name in `reward_rules.json`. Name mismatches are the #1 source of bugs — a user who saved a card under the old name gets no reward rules matched.
