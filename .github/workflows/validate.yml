@@ -1,0 +1,74 @@
+name: Validate Data
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate JSON files
+        run: |
+          python3 -c "import json; json.load(open('CardMap/CardMap/Resources/reward_rules.json'))"
+          python3 -c "import json; json.load(open('CardMap/CardMap/Resources/quarterly_categories.json'))"
+          echo "JSON files are valid"
+
+      - name: Validate category names
+        run: |
+          python3 << 'EOF'
+          import json, sys
+          from datetime import datetime
+
+          CANONICAL = {
+              "Groceries", "Gas", "Dining", "Drug Stores", "Transit & Commute",
+              "Rideshare – Uber", "Rideshare – Lyft",
+              "Flights – General", "Flights – via Portal",
+              "Flights – Delta Only", "Flights – United Only",
+              "Flights – Southwest Only", "Flights – JetBlue Only",
+              "Flights – American Airlines Only", "Flights – Alaska Airlines Only",
+              "Hotels – General", "Hotels – via Portal",
+              "Hotels – Hyatt Only", "Hotels – Hilton Only",
+              "Hotels – Marriott Only", "Hotels – IHG Only",
+              "Hotels – Wyndham Only", "Car Rentals",
+              "Streaming", "Entertainment", "Fitness",
+              "Amazon & Whole Foods", "Costco", "Sam's Club", "BJ's Wholesale",
+              "Home Improvement", "Online Shopping",
+              "Apple Purchases", "PayPal Purchases", "Rent",
+              "Everything Else",
+          }
+
+          errors = []
+
+          # Check reward_rules.json
+          rules = json.load(open("CardMap/CardMap/Resources/reward_rules.json"))
+          for r in rules:
+              if r["category"] not in CANONICAL:
+                  errors.append(f"reward_rules.json: unknown category '{r['category']}' on card '{r['cardName']}'")
+
+          # Check quarterly_categories.json
+          quarterly = json.load(open("CardMap/CardMap/Resources/quarterly_categories.json"))
+          current_year = datetime.now().year
+          current_quarter = (datetime.now().month - 1) // 3 + 1
+          for entry in quarterly:
+              for cat in entry["categories"]:
+                  if cat not in CANONICAL:
+                      errors.append(f"quarterly_categories.json: unknown category '{cat}' in {entry['quarter']} for {entry['cardName']}")
+              # Warn on past quarters
+              q = entry["quarter"]  # e.g. "2026Q2"
+              y, qt = int(q[:4]), int(q[5])
+              if (y, qt) < (current_year, current_quarter):
+                  errors.append(f"quarterly_categories.json: stale past quarter '{q}' for {entry['cardName']} — remove it")
+
+          if errors:
+              print("VALIDATION ERRORS:")
+              for e in errors:
+                  print(f"  {e}")
+              sys.exit(1)
+          else:
+              print(f"All categories valid. {len(rules)} reward rules, {len(quarterly)} quarterly entries.")
+          EOF
