@@ -2088,5 +2088,10 @@
     "cardName": "Amex Gold Card",
     "category": "Hotels – via Portal",
     "rewardText": "5x"
+  },
+  {
+    "cardName": "Chase Sapphire Reserve",
+    "category": "Car Rentals – via Portal",
+    "rewardText": "10x"
   }
 ]

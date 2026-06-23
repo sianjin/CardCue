@@ -34,7 +34,7 @@ jobs:
               "Hotels – General", "Hotels – via Portal",
               "Hotels – Hyatt Only", "Hotels – Hilton Only",
               "Hotels – Marriott Only", "Hotels – IHG Only",
-              "Hotels – Wyndham Only", "Car Rentals",
+              "Hotels – Wyndham Only", "Car Rentals", "Car Rentals – via Portal",
               "Streaming", "Entertainment", "Fitness",
               "Amazon & Whole Foods", "Costco", "Sam's Club", "BJ's Wholesale",
               "Home Improvement", "Online Shopping",
@@ -45,13 +45,13 @@ jobs:
           errors = []
 
           # Check reward_rules.json
-          rules = json.load(open("CardMap/CardMap/Resources/reward_rules.json"))
+          rules = json.load(open("CardCue/CardCue/Resources/reward_rules.json"))
           for r in rules:
               if r["category"] not in CANONICAL:
                   errors.append(f"reward_rules.json: unknown category '{r['category']}' on card '{r['cardName']}'")
 
           # Check quarterly_categories.json
-          quarterly = json.load(open("CardMap/CardMap/Resources/quarterly_categories.json"))
+          quarterly = json.load(open("CardCue/CardCue/Resources/quarterly_categories.json"))
           current_year = datetime.now().year
           current_quarter = (datetime.now().month - 1) // 3 + 1
           for entry in quarterly:

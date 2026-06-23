@@ -93,6 +93,7 @@ Apply subcategories only where there is a meaningful accuracy difference between
 - Hotels – IHG Only *(Chase IHG cards only)*
 - Hotels – Wyndham Only *(Barclays Wyndham cards only)*
 - Car Rentals
+- Car Rentals – via Portal *(boosted rate when booking through card's own travel portal)*
 
 **Entertainment & Lifestyle**
 - Streaming

@@ -72,6 +72,7 @@ enum KnownCards {
         "Hotels – Wyndham Only",
         // Other travel
         "Car Rentals",
+        "Car Rentals – via Portal",
         // Entertainment & Lifestyle
         "Streaming",
         "Entertainment",
