@@ -69,6 +69,7 @@ Apply subcategories only where there is a meaningful accuracy difference between
 - Groceries
 - Groceries – Online *(online orders, pickup, and delivery only; e.g. CSP earns 3x here)*
 - Gas
+- Gas – Costco *(5% at Costco gas stations; Costco Anywhere Visa cards only)*
 - Dining
 - Drug Stores
 - Transit & Commute

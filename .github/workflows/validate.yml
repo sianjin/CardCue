@@ -25,7 +25,7 @@ jobs:
           from datetime import datetime
 
           CANONICAL = {
-              "Groceries", "Groceries – Online", "Gas", "Dining", "Drug Stores", "Transit & Commute",
+              "Groceries", "Groceries – Online", "Gas", "Gas – Costco", "Dining", "Drug Stores", "Transit & Commute",
               "Rideshare – Uber", "Rideshare – Lyft",
               "Flights – General", "Flights – via Portal",
               "Flights – Delta Only", "Flights – United Only",

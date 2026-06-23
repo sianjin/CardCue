@@ -1191,11 +1191,6 @@
   },
   {
     "cardName": "Costco Anywhere Visa by Citi",
-    "category": "Gas",
-    "rewardText": "5%"
-  },
-  {
-    "cardName": "Costco Anywhere Visa by Citi",
     "category": "Dining",
     "rewardText": "3%"
   },
@@ -1213,11 +1208,6 @@
     "cardName": "Costco Anywhere Visa by Citi",
     "category": "Everything Else",
     "rewardText": "1%"
-  },
-  {
-    "cardName": "Costco Anywhere Visa Business by Citi",
-    "category": "Gas",
-    "rewardText": "4%"
   },
   {
     "cardName": "Costco Anywhere Visa Business by Citi",
@@ -2093,5 +2083,35 @@
     "cardName": "Chase Sapphire Reserve",
     "category": "Car Rentals – via Portal",
     "rewardText": "10x"
+  },
+  {
+    "cardName": "Costco Anywhere Visa by Citi",
+    "category": "Gas – Costco",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Costco Anywhere Visa by Citi",
+    "category": "Gas",
+    "rewardText": "4%"
+  },
+  {
+    "cardName": "Costco Anywhere Visa by Citi",
+    "category": "Hotels – General",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Costco Anywhere Visa Business by Citi",
+    "category": "Gas – Costco",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Costco Anywhere Visa Business by Citi",
+    "category": "Gas",
+    "rewardText": "4%"
+  },
+  {
+    "cardName": "Costco Anywhere Visa Business by Citi",
+    "category": "Hotels – General",
+    "rewardText": "3%"
   }
 ]

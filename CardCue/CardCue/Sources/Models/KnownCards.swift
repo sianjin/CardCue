@@ -48,6 +48,7 @@ enum KnownCards {
         "Groceries",
         "Groceries – Online",
         "Gas",
+        "Gas – Costco",
         "Dining",
         "Drug Stores",
         "Transit & Commute",
