@@ -2083,5 +2083,10 @@
     "cardName": "Bread Cashback Amex",
     "category": "Everything Else",
     "rewardText": "2%"
+  },
+  {
+    "cardName": "Amex Gold Card",
+    "category": "Hotels – via Portal",
+    "rewardText": "5x"
   }
 ]
