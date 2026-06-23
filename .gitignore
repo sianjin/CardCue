@@ -18,3 +18,4 @@ DerivedData/
 # Swift Package Manager
 .build/
 *.resolved
+VERIFY_CARDS.md
