@@ -1,7 +1,7 @@
 [
   {
     "cardName": "Chase Sapphire Preferred",
-    "category": "Flights \u2013 via Portal",
+    "category": "Flights – via Portal",
     "rewardText": "5x"
   },
   {
@@ -21,23 +21,23 @@
   },
   {
     "cardName": "Chase Sapphire Preferred",
-    "category": "Flights \u2013 General",
-    "rewardText": "3x"
+    "category": "Flights – General",
+    "rewardText": "2x"
   },
   {
     "cardName": "Chase Sapphire Preferred",
-    "category": "Hotels \u2013 General",
-    "rewardText": "3x"
+    "category": "Hotels – General",
+    "rewardText": "2x"
   },
   {
     "cardName": "Chase Sapphire Preferred",
     "category": "Car Rentals",
-    "rewardText": "3x"
+    "rewardText": "2x"
   },
   {
     "cardName": "Chase Sapphire Preferred",
-    "category": "Rideshare \u2013 Lyft",
-    "rewardText": "3x"
+    "category": "Rideshare – Lyft",
+    "rewardText": "5x"
   },
   {
     "cardName": "Chase Sapphire Preferred",
@@ -46,13 +46,13 @@
   },
   {
     "cardName": "Chase Sapphire Reserve",
-    "category": "Hotels \u2013 via Portal",
-    "rewardText": "10x"
+    "category": "Hotels – via Portal",
+    "rewardText": "8x"
   },
   {
     "cardName": "Chase Sapphire Reserve",
-    "category": "Flights \u2013 via Portal",
-    "rewardText": "3x"
+    "category": "Flights – via Portal",
+    "rewardText": "8x"
   },
   {
     "cardName": "Chase Sapphire Reserve",
@@ -61,13 +61,13 @@
   },
   {
     "cardName": "Chase Sapphire Reserve",
-    "category": "Flights \u2013 General",
-    "rewardText": "3x"
+    "category": "Flights – General",
+    "rewardText": "4x"
   },
   {
     "cardName": "Chase Sapphire Reserve",
-    "category": "Hotels \u2013 General",
-    "rewardText": "3x"
+    "category": "Hotels – General",
+    "rewardText": "4x"
   },
   {
     "cardName": "Chase Sapphire Reserve",
@@ -76,7 +76,7 @@
   },
   {
     "cardName": "Chase Sapphire Reserve",
-    "category": "Rideshare \u2013 Lyft",
+    "category": "Rideshare – Lyft",
     "rewardText": "3x"
   },
   {
@@ -101,7 +101,7 @@
   },
   {
     "cardName": "Chase Freedom Unlimited",
-    "category": "Flights \u2013 via Portal",
+    "category": "Flights – via Portal",
     "rewardText": "5%"
   },
   {
@@ -146,12 +146,12 @@
   },
   {
     "cardName": "Chase Ink Business Preferred",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3x"
   },
   {
     "cardName": "Chase Ink Business Preferred",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "3x"
   },
   {
@@ -171,7 +171,7 @@
   },
   {
     "cardName": "Chase Ink Business Premier",
-    "category": "Flights \u2013 via Portal",
+    "category": "Flights – via Portal",
     "rewardText": "5%"
   },
   {
@@ -231,7 +231,7 @@
   },
   {
     "cardName": "Chase World of Hyatt",
-    "category": "Hotels \u2013 Hyatt Only",
+    "category": "Hotels – Hyatt Only",
     "rewardText": "9x"
   },
   {
@@ -241,7 +241,7 @@
   },
   {
     "cardName": "Chase World of Hyatt",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "2x"
   },
   {
@@ -261,7 +261,7 @@
   },
   {
     "cardName": "Chase World of Hyatt Business",
-    "category": "Hotels \u2013 Hyatt Only",
+    "category": "Hotels – Hyatt Only",
     "rewardText": "9x"
   },
   {
@@ -281,7 +281,7 @@
   },
   {
     "cardName": "Chase United Explorer",
-    "category": "Flights \u2013 United Only",
+    "category": "Flights – United Only",
     "rewardText": "2x"
   },
   {
@@ -291,7 +291,7 @@
   },
   {
     "cardName": "Chase United Explorer",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "2x"
   },
   {
@@ -301,7 +301,7 @@
   },
   {
     "cardName": "Chase United Club Infinite",
-    "category": "Flights \u2013 United Only",
+    "category": "Flights – United Only",
     "rewardText": "4x"
   },
   {
@@ -316,7 +316,7 @@
   },
   {
     "cardName": "Chase United Quest",
-    "category": "Flights \u2013 United Only",
+    "category": "Flights – United Only",
     "rewardText": "3x"
   },
   {
@@ -326,7 +326,7 @@
   },
   {
     "cardName": "Chase United Quest",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "2x"
   },
   {
@@ -336,7 +336,7 @@
   },
   {
     "cardName": "Chase United Gateway",
-    "category": "Flights \u2013 United Only",
+    "category": "Flights – United Only",
     "rewardText": "2x"
   },
   {
@@ -351,12 +351,12 @@
   },
   {
     "cardName": "Chase Southwest Rapid Rewards Plus",
-    "category": "Flights \u2013 Southwest Only",
+    "category": "Flights – Southwest Only",
     "rewardText": "2x"
   },
   {
     "cardName": "Chase Southwest Rapid Rewards Plus",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "2x"
   },
   {
@@ -366,12 +366,12 @@
   },
   {
     "cardName": "Chase Southwest Rapid Rewards Premier",
-    "category": "Flights \u2013 Southwest Only",
+    "category": "Flights – Southwest Only",
     "rewardText": "3x"
   },
   {
     "cardName": "Chase Southwest Rapid Rewards Premier",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "2x"
   },
   {
@@ -381,12 +381,12 @@
   },
   {
     "cardName": "Chase Southwest Rapid Rewards Priority",
-    "category": "Flights \u2013 Southwest Only",
+    "category": "Flights – Southwest Only",
     "rewardText": "3x"
   },
   {
     "cardName": "Chase Southwest Rapid Rewards Priority",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "2x"
   },
   {
@@ -396,12 +396,12 @@
   },
   {
     "cardName": "Chase IHG One Rewards Premier",
-    "category": "Hotels \u2013 IHG Only",
+    "category": "Hotels – IHG Only",
     "rewardText": "26x"
   },
   {
     "cardName": "Chase IHG One Rewards Premier",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "5x"
   },
   {
@@ -426,12 +426,12 @@
   },
   {
     "cardName": "Chase IHG One Rewards Traveler",
-    "category": "Hotels \u2013 IHG Only",
+    "category": "Hotels – IHG Only",
     "rewardText": "17x"
   },
   {
     "cardName": "Chase IHG One Rewards Traveler",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3x"
   },
   {
@@ -446,7 +446,7 @@
   },
   {
     "cardName": "Chase Marriott Bonvoy Boundless",
-    "category": "Hotels \u2013 Marriott Only",
+    "category": "Hotels – Marriott Only",
     "rewardText": "6x"
   },
   {
@@ -471,12 +471,12 @@
   },
   {
     "cardName": "Chase Marriott Bonvoy Bold",
-    "category": "Hotels \u2013 Marriott Only",
+    "category": "Hotels – Marriott Only",
     "rewardText": "3x"
   },
   {
     "cardName": "Chase Marriott Bonvoy Bold",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "2x"
   },
   {
@@ -491,7 +491,7 @@
   },
   {
     "cardName": "Chase Marriott Bonvoy Bountiful",
-    "category": "Hotels \u2013 Marriott Only",
+    "category": "Hotels – Marriott Only",
     "rewardText": "6x"
   },
   {
@@ -541,7 +541,7 @@
   },
   {
     "cardName": "Chase Aer Lingus Visa Signature",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3x"
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "cardName": "Chase Iberia Visa Signature",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3x"
   },
   {
@@ -571,17 +571,17 @@
   },
   {
     "cardName": "Amex Platinum",
-    "category": "Flights \u2013 via Portal",
+    "category": "Flights – via Portal",
     "rewardText": "5x"
   },
   {
     "cardName": "Amex Platinum",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "5x"
   },
   {
     "cardName": "Amex Platinum",
-    "category": "Hotels \u2013 via Portal",
+    "category": "Hotels – via Portal",
     "rewardText": "5x"
   },
   {
@@ -591,17 +591,17 @@
   },
   {
     "cardName": "Amex Business Platinum",
-    "category": "Flights \u2013 via Portal",
+    "category": "Flights – via Portal",
     "rewardText": "5x"
   },
   {
     "cardName": "Amex Business Platinum",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "5x"
   },
   {
     "cardName": "Amex Business Platinum",
-    "category": "Hotels \u2013 via Portal",
+    "category": "Hotels – via Portal",
     "rewardText": "5x"
   },
   {
@@ -621,7 +621,7 @@
   },
   {
     "cardName": "Amex Gold Card",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3x"
   },
   {
@@ -631,7 +631,7 @@
   },
   {
     "cardName": "Amex Business Gold",
-    "category": "Flights \u2013 via Portal",
+    "category": "Flights – via Portal",
     "rewardText": "3x"
   },
   {
@@ -641,12 +641,12 @@
   },
   {
     "cardName": "Amex Green Card",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3x"
   },
   {
     "cardName": "Amex Green Card",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "3x"
   },
   {
@@ -756,7 +756,7 @@
   },
   {
     "cardName": "Amex Hilton Honors",
-    "category": "Hotels \u2013 Hilton Only",
+    "category": "Hotels – Hilton Only",
     "rewardText": "7x"
   },
   {
@@ -781,7 +781,7 @@
   },
   {
     "cardName": "Amex Hilton Honors Surpass",
-    "category": "Hotels \u2013 Hilton Only",
+    "category": "Hotels – Hilton Only",
     "rewardText": "12x"
   },
   {
@@ -806,12 +806,12 @@
   },
   {
     "cardName": "Amex Hilton Honors Aspire",
-    "category": "Hotels \u2013 Hilton Only",
+    "category": "Hotels – Hilton Only",
     "rewardText": "14x"
   },
   {
     "cardName": "Amex Hilton Honors Aspire",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "7x"
   },
   {
@@ -826,7 +826,7 @@
   },
   {
     "cardName": "Amex Hilton Honors Business",
-    "category": "Hotels \u2013 Hilton Only",
+    "category": "Hotels – Hilton Only",
     "rewardText": "12x"
   },
   {
@@ -846,7 +846,7 @@
   },
   {
     "cardName": "Amex Marriott Bonvoy",
-    "category": "Hotels \u2013 Marriott Only",
+    "category": "Hotels – Marriott Only",
     "rewardText": "6x"
   },
   {
@@ -856,7 +856,7 @@
   },
   {
     "cardName": "Amex Marriott Bonvoy",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "2x"
   },
   {
@@ -866,7 +866,7 @@
   },
   {
     "cardName": "Amex Marriott Bonvoy Brilliant",
-    "category": "Hotels \u2013 Marriott Only",
+    "category": "Hotels – Marriott Only",
     "rewardText": "6x"
   },
   {
@@ -876,7 +876,7 @@
   },
   {
     "cardName": "Amex Marriott Bonvoy Brilliant",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3x"
   },
   {
@@ -886,7 +886,7 @@
   },
   {
     "cardName": "Amex Marriott Bonvoy Bevy",
-    "category": "Hotels \u2013 Marriott Only",
+    "category": "Hotels – Marriott Only",
     "rewardText": "6x"
   },
   {
@@ -906,7 +906,7 @@
   },
   {
     "cardName": "Amex Marriott Bonvoy Business",
-    "category": "Hotels \u2013 Marriott Only",
+    "category": "Hotels – Marriott Only",
     "rewardText": "6x"
   },
   {
@@ -926,7 +926,7 @@
   },
   {
     "cardName": "Amex Delta SkyMiles Blue",
-    "category": "Flights \u2013 Delta Only",
+    "category": "Flights – Delta Only",
     "rewardText": "2x"
   },
   {
@@ -941,7 +941,7 @@
   },
   {
     "cardName": "Amex Delta SkyMiles Gold",
-    "category": "Flights \u2013 Delta Only",
+    "category": "Flights – Delta Only",
     "rewardText": "2x"
   },
   {
@@ -961,7 +961,7 @@
   },
   {
     "cardName": "Amex Delta SkyMiles Platinum",
-    "category": "Flights \u2013 Delta Only",
+    "category": "Flights – Delta Only",
     "rewardText": "3x"
   },
   {
@@ -976,7 +976,7 @@
   },
   {
     "cardName": "Amex Delta SkyMiles Platinum",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "2x"
   },
   {
@@ -986,7 +986,7 @@
   },
   {
     "cardName": "Amex Delta SkyMiles Reserve",
-    "category": "Flights \u2013 Delta Only",
+    "category": "Flights – Delta Only",
     "rewardText": "3x"
   },
   {
@@ -996,7 +996,7 @@
   },
   {
     "cardName": "Amex Delta SkyMiles Gold Business",
-    "category": "Flights \u2013 Delta Only",
+    "category": "Flights – Delta Only",
     "rewardText": "2x"
   },
   {
@@ -1011,7 +1011,7 @@
   },
   {
     "cardName": "Amex Delta SkyMiles Platinum Business",
-    "category": "Flights \u2013 Delta Only",
+    "category": "Flights – Delta Only",
     "rewardText": "3x"
   },
   {
@@ -1026,7 +1026,7 @@
   },
   {
     "cardName": "Amex Delta SkyMiles Reserve Business",
-    "category": "Flights \u2013 Delta Only",
+    "category": "Flights – Delta Only",
     "rewardText": "3x"
   },
   {
@@ -1036,12 +1036,12 @@
   },
   {
     "cardName": "Citi Strata Premier",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "3x"
   },
   {
     "cardName": "Citi Strata Premier",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3x"
   },
   {
@@ -1066,37 +1066,22 @@
   },
   {
     "cardName": "Citi Strata Elite",
-    "category": "Hotels \u2013 General",
-    "rewardText": "5x"
-  },
-  {
-    "cardName": "Citi Strata Elite",
-    "category": "Flights \u2013 General",
-    "rewardText": "5x"
-  },
-  {
-    "cardName": "Citi Strata Elite",
     "category": "Dining",
     "rewardText": "3x"
   },
   {
     "cardName": "Citi Strata Elite",
-    "category": "Groceries",
-    "rewardText": "3x"
-  },
-  {
-    "cardName": "Citi Strata Elite",
     "category": "Everything Else",
-    "rewardText": "1x"
+    "rewardText": "1.5x"
   },
   {
     "cardName": "Citi Premier",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "3x"
   },
   {
     "cardName": "Citi Premier",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3x"
   },
   {
@@ -1156,7 +1141,7 @@
   },
   {
     "cardName": "Citi AAdvantage Platinum Select",
-    "category": "Flights \u2013 American Airlines Only",
+    "category": "Flights – American Airlines Only",
     "rewardText": "2x"
   },
   {
@@ -1176,18 +1161,8 @@
   },
   {
     "cardName": "Citi AAdvantage Executive World Elite",
-    "category": "Flights \u2013 American Airlines Only",
+    "category": "Flights – American Airlines Only",
     "rewardText": "4x"
-  },
-  {
-    "cardName": "Citi AAdvantage Executive World Elite",
-    "category": "Hotels \u2013 General",
-    "rewardText": "10x"
-  },
-  {
-    "cardName": "Citi AAdvantage Executive World Elite",
-    "category": "Car Rentals",
-    "rewardText": "10x"
   },
   {
     "cardName": "Citi AAdvantage Executive World Elite",
@@ -1201,7 +1176,7 @@
   },
   {
     "cardName": "Citi AAdvantage MileUp",
-    "category": "Flights \u2013 American Airlines Only",
+    "category": "Flights – American Airlines Only",
     "rewardText": "2x"
   },
   {
@@ -1226,7 +1201,7 @@
   },
   {
     "cardName": "Costco Anywhere Visa by Citi",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3%"
   },
   {
@@ -1251,7 +1226,7 @@
   },
   {
     "cardName": "Costco Anywhere Visa Business by Citi",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3%"
   },
   {
@@ -1266,12 +1241,12 @@
   },
   {
     "cardName": "Bank of America Premium Rewards",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "2x"
   },
   {
     "cardName": "Bank of America Premium Rewards",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "2x"
   },
   {
@@ -1291,12 +1266,12 @@
   },
   {
     "cardName": "Bank of America Premium Rewards Elite",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "2x"
   },
   {
     "cardName": "Bank of America Premium Rewards Elite",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "2x"
   },
   {
@@ -1331,7 +1306,7 @@
   },
   {
     "cardName": "Bank of America Business Advantage Travel Rewards",
-    "category": "Flights \u2013 via Portal",
+    "category": "Flights – via Portal",
     "rewardText": "3x"
   },
   {
@@ -1341,7 +1316,7 @@
   },
   {
     "cardName": "Bank of America Alaska Airlines",
-    "category": "Flights \u2013 Alaska Airlines Only",
+    "category": "Flights – Alaska Airlines Only",
     "rewardText": "3x"
   },
   {
@@ -1351,7 +1326,7 @@
   },
   {
     "cardName": "Bank of America Alaska Airlines Business",
-    "category": "Flights \u2013 Alaska Airlines Only",
+    "category": "Flights – Alaska Airlines Only",
     "rewardText": "3x"
   },
   {
@@ -1361,7 +1336,7 @@
   },
   {
     "cardName": "Bank of America Air France KLM World Elite",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3x"
   },
   {
@@ -1376,12 +1351,12 @@
   },
   {
     "cardName": "U.S. Bank Altitude Reserve",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3x"
   },
   {
     "cardName": "U.S. Bank Altitude Reserve",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "3x"
   },
   {
@@ -1396,12 +1371,12 @@
   },
   {
     "cardName": "U.S. Bank Altitude Connect",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "4x"
   },
   {
     "cardName": "U.S. Bank Altitude Connect",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "4x"
   },
   {
@@ -1481,12 +1456,12 @@
   },
   {
     "cardName": "Wells Fargo Autograph",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3x"
   },
   {
     "cardName": "Wells Fargo Autograph",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "3x"
   },
   {
@@ -1516,12 +1491,12 @@
   },
   {
     "cardName": "Wells Fargo Autograph Journey",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "5x"
   },
   {
     "cardName": "Wells Fargo Autograph Journey",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "4x"
   },
   {
@@ -1541,22 +1516,12 @@
   },
   {
     "cardName": "Capital One Venture X",
-    "category": "Hotels \u2013 via Portal",
+    "category": "Hotels – via Portal",
     "rewardText": "10x"
   },
   {
     "cardName": "Capital One Venture X",
-    "category": "Flights \u2013 via Portal",
-    "rewardText": "5x"
-  },
-  {
-    "cardName": "Capital One Venture X",
-    "category": "Hotels \u2013 General",
-    "rewardText": "5x"
-  },
-  {
-    "cardName": "Capital One Venture X",
-    "category": "Flights \u2013 General",
+    "category": "Flights – via Portal",
     "rewardText": "5x"
   },
   {
@@ -1566,22 +1531,12 @@
   },
   {
     "cardName": "Capital One Venture X Business",
-    "category": "Hotels \u2013 via Portal",
+    "category": "Hotels – via Portal",
     "rewardText": "10x"
   },
   {
     "cardName": "Capital One Venture X Business",
-    "category": "Flights \u2013 via Portal",
-    "rewardText": "5x"
-  },
-  {
-    "cardName": "Capital One Venture X Business",
-    "category": "Hotels \u2013 General",
-    "rewardText": "5x"
-  },
-  {
-    "cardName": "Capital One Venture X Business",
-    "category": "Flights \u2013 General",
+    "category": "Flights – via Portal",
     "rewardText": "5x"
   },
   {
@@ -1591,7 +1546,7 @@
   },
   {
     "cardName": "Capital One Venture",
-    "category": "Hotels \u2013 via Portal",
+    "category": "Hotels – via Portal",
     "rewardText": "5x"
   },
   {
@@ -1606,7 +1561,7 @@
   },
   {
     "cardName": "Capital One VentureOne",
-    "category": "Hotels \u2013 via Portal",
+    "category": "Hotels – via Portal",
     "rewardText": "5x"
   },
   {
@@ -1622,17 +1577,17 @@
   {
     "cardName": "Capital One Savor",
     "category": "Streaming",
-    "rewardText": "8%"
+    "rewardText": "3%"
   },
   {
     "cardName": "Capital One Savor",
     "category": "Dining",
-    "rewardText": "4%"
+    "rewardText": "3%"
   },
   {
     "cardName": "Capital One Savor",
     "category": "Entertainment",
-    "rewardText": "4%"
+    "rewardText": "3%"
   },
   {
     "cardName": "Capital One Savor",
@@ -1671,7 +1626,7 @@
   },
   {
     "cardName": "Capital One Quicksilver",
-    "category": "Hotels \u2013 via Portal",
+    "category": "Hotels – via Portal",
     "rewardText": "5%"
   },
   {
@@ -1686,7 +1641,7 @@
   },
   {
     "cardName": "Capital One QuicksilverOne",
-    "category": "Hotels \u2013 via Portal",
+    "category": "Hotels – via Portal",
     "rewardText": "5%"
   },
   {
@@ -1701,7 +1656,7 @@
   },
   {
     "cardName": "Capital One Spark Cash Plus",
-    "category": "Hotels \u2013 via Portal",
+    "category": "Hotels – via Portal",
     "rewardText": "5%"
   },
   {
@@ -1716,7 +1671,7 @@
   },
   {
     "cardName": "Capital One Spark Miles",
-    "category": "Hotels \u2013 via Portal",
+    "category": "Hotels – via Portal",
     "rewardText": "5x"
   },
   {
@@ -1731,7 +1686,7 @@
   },
   {
     "cardName": "Capital One Spark Miles Select",
-    "category": "Hotels \u2013 via Portal",
+    "category": "Hotels – via Portal",
     "rewardText": "5x"
   },
   {
@@ -1746,7 +1701,7 @@
   },
   {
     "cardName": "Capital One Spark Cash Select",
-    "category": "Hotels \u2013 via Portal",
+    "category": "Hotels – via Portal",
     "rewardText": "5%"
   },
   {
@@ -1771,7 +1726,7 @@
   },
   {
     "cardName": "Capital One Walmart Rewards Mastercard",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "2%"
   },
   {
@@ -1851,7 +1806,7 @@
   },
   {
     "cardName": "Apple Card",
-    "category": "Rideshare \u2013 Uber",
+    "category": "Rideshare – Uber",
     "rewardText": "3%"
   },
   {
@@ -1885,58 +1840,8 @@
     "rewardText": "3%"
   },
   {
-    "cardName": "Robinhood Gold Card",
-    "category": "Groceries",
-    "rewardText": "3%"
-  },
-  {
-    "cardName": "Robinhood Gold Card",
-    "category": "Gas",
-    "rewardText": "3%"
-  },
-  {
-    "cardName": "Robinhood Gold Card",
-    "category": "Dining",
-    "rewardText": "3%"
-  },
-  {
-    "cardName": "Robinhood Gold Card",
-    "category": "Drug Stores",
-    "rewardText": "3%"
-  },
-  {
-    "cardName": "Robinhood Gold Card",
-    "category": "Flights \u2013 General",
-    "rewardText": "3%"
-  },
-  {
-    "cardName": "Robinhood Gold Card",
-    "category": "Hotels \u2013 General",
-    "rewardText": "3%"
-  },
-  {
-    "cardName": "Robinhood Gold Card",
-    "category": "Car Rentals",
-    "rewardText": "3%"
-  },
-  {
-    "cardName": "Robinhood Gold Card",
-    "category": "Streaming",
-    "rewardText": "3%"
-  },
-  {
-    "cardName": "Robinhood Gold Card",
-    "category": "Entertainment",
-    "rewardText": "3%"
-  },
-  {
-    "cardName": "Robinhood Gold Card",
-    "category": "Online Shopping",
-    "rewardText": "3%"
-  },
-  {
     "cardName": "Barclays JetBlue Plus",
-    "category": "Flights \u2013 JetBlue Only",
+    "category": "Flights – JetBlue Only",
     "rewardText": "6x"
   },
   {
@@ -1956,7 +1861,7 @@
   },
   {
     "cardName": "Barclays JetBlue",
-    "category": "Flights \u2013 JetBlue Only",
+    "category": "Flights – JetBlue Only",
     "rewardText": "3x"
   },
   {
@@ -1976,7 +1881,7 @@
   },
   {
     "cardName": "Barclays JetBlue Business",
-    "category": "Flights \u2013 JetBlue Only",
+    "category": "Flights – JetBlue Only",
     "rewardText": "6x"
   },
   {
@@ -1991,7 +1896,7 @@
   },
   {
     "cardName": "Barclays Wyndham Rewards Earner Plus",
-    "category": "Hotels \u2013 Wyndham Only",
+    "category": "Hotels – Wyndham Only",
     "rewardText": "6x"
   },
   {
@@ -2011,7 +1916,7 @@
   },
   {
     "cardName": "Barclays Wyndham Rewards Earner Business",
-    "category": "Hotels \u2013 Wyndham Only",
+    "category": "Hotels – Wyndham Only",
     "rewardText": "8x"
   },
   {
@@ -2026,7 +1931,7 @@
   },
   {
     "cardName": "Barclays Hawaiian Airlines World Elite Mastercard",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3x"
   },
   {
@@ -2046,7 +1951,7 @@
   },
   {
     "cardName": "Barclays Aviator Red World Elite Mastercard",
-    "category": "Flights \u2013 American Airlines Only",
+    "category": "Flights – American Airlines Only",
     "rewardText": "2x"
   },
   {
@@ -2056,12 +1961,12 @@
   },
   {
     "cardName": "Barclays Aviator Silver World Elite Mastercard",
-    "category": "Flights \u2013 American Airlines Only",
+    "category": "Flights – American Airlines Only",
     "rewardText": "3x"
   },
   {
     "cardName": "Barclays Aviator Silver World Elite Mastercard",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "2x"
   },
   {
@@ -2091,7 +1996,7 @@
   },
   {
     "cardName": "Synchrony Sam's Club Mastercard",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "1%"
   },
   {
@@ -2136,12 +2041,12 @@
   },
   {
     "cardName": "Navy Federal Flagship Rewards Visa Signature",
-    "category": "Flights \u2013 General",
+    "category": "Flights – General",
     "rewardText": "3x"
   },
   {
     "cardName": "Navy Federal Flagship Rewards Visa Signature",
-    "category": "Hotels \u2013 General",
+    "category": "Hotels – General",
     "rewardText": "3x"
   },
   {
