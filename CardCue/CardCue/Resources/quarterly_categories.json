@@ -1,8 +1,8 @@
 [
-  { "cardName": "Discover it Cash Back", "quarter": "2026Q1", "categories": ["Dining", "Drug Stores"] },
-  { "cardName": "Discover it Cash Back", "quarter": "2026Q2", "categories": ["Gas", "Home Improvement"] },
+  { "cardName": "Discover it Cash Back", "quarter": "2026Q1", "categories": ["Groceries", "Streaming"] },
+  { "cardName": "Discover it Cash Back", "quarter": "2026Q2", "categories": ["Dining", "Home Improvement"] },
   { "cardName": "Discover it Cash Back", "quarter": "2026Q3", "categories": ["Gas", "Transit & Commute", "Drug Stores"] },
-  { "cardName": "Chase Freedom Flex", "quarter": "2026Q1", "categories": ["Groceries", "Fitness"] },
+  { "cardName": "Chase Freedom Flex", "quarter": "2026Q1", "categories": ["Dining"] },
   { "cardName": "Chase Freedom Flex", "quarter": "2026Q2", "categories": ["Amazon & Whole Foods", "Flights – via Portal"] },
   { "cardName": "Chase Freedom Flex", "quarter": "2026Q3", "categories": ["Gas", "Transit & Commute", "Entertainment"] }
 ]
