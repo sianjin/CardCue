@@ -2,11 +2,22 @@ import SwiftUI
 
 struct QuickReferenceView: View {
     @EnvironmentObject private var store: CardStore
+    @EnvironmentObject private var categoryOrder: CategoryOrderStore
+
+    @Binding var showingAbout: Bool
+    @Binding var showingPrivacy: Bool
+
+    @State private var editMode: EditMode = .inactive
 
     private var currentQuarter: String { QuarterlyCategory.currentQuarterKey() }
 
-    private var rows: [(category: String, cardName: String, reward: String, isCustom: Bool)] {
+    private var rawRows: [(category: String, cardName: String, reward: String, isCustom: Bool)] {
         RewardStore.shared.quickReference(for: store.cards)
+    }
+
+    private var rows: [(category: String, cardName: String, reward: String, isCustom: Bool)] {
+        let rowMap = Dictionary(uniqueKeysWithValues: rawRows.map { ($0.category, $0) })
+        return categoryOrder.order.compactMap { rowMap[$0] }
     }
 
     private var rotatingCards: [String] {
@@ -31,6 +42,34 @@ struct QuickReferenceView: View {
                 }
             }
             .navigationTitle("Quick Reference")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Menu {
+                        Button { showingAbout = true } label: {
+                            Label("About", systemImage: "info.circle")
+                        }
+                        Button { showingPrivacy = true } label: {
+                            Label("Privacy", systemImage: "hand.raised")
+                        }
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                    }
+                }
+                if !rows.isEmpty {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(editMode == .active ? "Done" : "Edit") {
+                            editMode = editMode == .active ? .inactive : .active
+                        }
+                    }
+                }
+            }
+            .environment(\.editMode, $editMode)
+        }
+        .onAppear {
+            categoryOrder.sync(to: rawRows.map(\.category))
+        }
+        .onChange(of: rawRows.map(\.category)) { _, newCategories in
+            categoryOrder.sync(to: newCategories)
         }
     }
 
@@ -76,6 +115,7 @@ struct QuickReferenceView: View {
                     }
                     .foregroundStyle(.secondary)
                     .listRowBackground(Color.clear)
+                    .moveDisabled(true)
                 }
             }
 
@@ -91,10 +131,13 @@ struct QuickReferenceView: View {
                         }
                         Spacer()
                         Text(row.reward)
-                            .font(.body.monospacedDigit())
+                            .font(.body.monospacedDigit().weight(.medium))
                             .foregroundStyle(.primary)
                     }
-                    .padding(.vertical, 2)
+                    .padding(.vertical, 6)
+                }
+                .onMove { source, destination in
+                    categoryOrder.move(from: source, to: destination)
                 }
             }
         }

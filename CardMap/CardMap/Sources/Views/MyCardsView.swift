@@ -9,9 +9,6 @@ struct MyCardsView: View {
     @State private var showingAdd = false
     @State private var editingCard: UserCard? = nil
 
-    private var pinnedCards: [UserCard] { store.cards.filter(\.pinned) }
-    private var unpinnedCards: [UserCard] { store.cards.filter { !$0.pinned } }
-
     var body: some View {
         NavigationStack {
             Group {
@@ -25,14 +22,10 @@ struct MyCardsView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Menu {
-                        Button {
-                            showingAbout = true
-                        } label: {
+                        Button { showingAbout = true } label: {
                             Label("About", systemImage: "info.circle")
                         }
-                        Button {
-                            showingPrivacy = true
-                        } label: {
+                        Button { showingPrivacy = true } label: {
                             Label("Privacy", systemImage: "hand.raised")
                         }
                     } label: {
@@ -45,22 +38,16 @@ struct MyCardsView: View {
                     }
                 }
                 ToolbarItem(placement: .primaryAction) {
-                    Button {
-                        showingAdd = true
-                    } label: {
+                    Button { showingAdd = true } label: {
                         Image(systemName: "plus")
                     }
                 }
             }
             .sheet(isPresented: $showingAdd) {
-                CardEditView { card in
-                    store.add(card)
-                }
+                CardEditView { card in store.add(card) }
             }
             .sheet(item: $editingCard) { card in
-                CardEditView(existing: card) { updated in
-                    store.update(updated)
-                }
+                CardEditView(existing: card) { updated in store.update(updated) }
             }
         }
     }
@@ -82,79 +69,22 @@ struct MyCardsView: View {
 
     private var cardList: some View {
         List {
-            if !pinnedCards.isEmpty {
-                Section("Pinned") {
-                    ForEach(pinnedCards) { card in
-                        cardRow(card)
+            ForEach(store.cards) { card in
+                CardRowView(card: card)
+                    .contentShape(Rectangle())
+                    .onTapGesture { editingCard = card }
+                    .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                        Button(role: .destructive) {
+                            if let index = store.cards.firstIndex(where: { $0.id == card.id }) {
+                                store.delete(at: IndexSet([index]))
+                            }
+                        } label: {
+                            Label("Delete", systemImage: "trash")
+                        }
                     }
-                    .onDelete { offsets in
-                        deleteFromSection(offsets: offsets, pinned: true)
-                    }
-                    .onMove { source, destination in
-                        moveInSection(source: source, destination: destination, pinned: true)
-                    }
-                }
             }
-
-            if !unpinnedCards.isEmpty {
-                Section(pinnedCards.isEmpty ? "" : "Cards") {
-                    ForEach(unpinnedCards) { card in
-                        cardRow(card)
-                    }
-                    .onDelete { offsets in
-                        deleteFromSection(offsets: offsets, pinned: false)
-                    }
-                    .onMove { source, destination in
-                        moveInSection(source: source, destination: destination, pinned: false)
-                    }
-                }
-            }
+            .onDelete { store.delete(at: $0) }
+            .onMove { store.move(from: $0, to: $1) }
         }
-    }
-
-    private func cardRow(_ card: UserCard) -> some View {
-        CardRowView(card: card)
-            .contentShape(Rectangle())
-            .onTapGesture {
-                editingCard = card
-            }
-            .swipeActions(edge: .leading) {
-                Button {
-                    store.togglePin(card)
-                } label: {
-                    Label(card.pinned ? "Unpin" : "Pin", systemImage: card.pinned ? "pin.slash" : "pin")
-                }
-                .tint(.orange)
-            }
-            .swipeActions(edge: .trailing, allowsFullSwipe: true) {
-                Button(role: .destructive) {
-                    if let index = store.cards.firstIndex(where: { $0.id == card.id }) {
-                        store.delete(at: IndexSet([index]))
-                    }
-                } label: {
-                    Label("Delete", systemImage: "trash")
-                }
-            }
-    }
-
-    private func deleteFromSection(offsets: IndexSet, pinned: Bool) {
-        let section = pinned ? pinnedCards : unpinnedCards
-        let globalIndices = offsets.compactMap { offset -> Int? in
-            let card = section[offset]
-            return store.cards.firstIndex(where: { $0.id == card.id })
-        }
-        store.delete(at: IndexSet(globalIndices))
-    }
-
-    private func moveInSection(source: IndexSet, destination: Int, pinned: Bool) {
-        var section = pinned ? pinnedCards : unpinnedCards
-        section.move(fromOffsets: source, toOffset: destination)
-
-        if pinned {
-            store.cards = section + store.cards.filter { !$0.pinned }
-        } else {
-            store.cards = store.cards.filter(\.pinned) + section
-        }
-        store.saveCurrentOrder()
     }
 }

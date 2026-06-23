@@ -10,7 +10,7 @@ struct AboutView: View {
                 }
 
                 Section("About") {
-                    Text("CardMap helps you remember which credit card to use for each spending category. No accounts, no tracking, no cloud.")
+                    Text("CardMap helps you get the most from your credit cards. Save your cards, add notes, and instantly see which card to use for any spending category. Drag to rank your favorites. No accounts, no tracking, no cloud.")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }

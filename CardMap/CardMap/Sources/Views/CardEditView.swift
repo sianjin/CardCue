@@ -8,10 +8,9 @@ struct CardEditView: View {
 
     @State private var name: String
     @State private var note: String
-    @State private var pinned: Bool
-    @State private var customCategory: String
+    @State private var customCategories: [String]
     @State private var showingCardPicker = false
-    @State private var showingCategoryPicker = false
+    @State private var editingSlot: Int? = nil
 
     private let existing: UserCard?
 
@@ -21,12 +20,19 @@ struct CardEditView: View {
         self.onSave = onSave
         _name = State(initialValue: existing?.name ?? "")
         _note = State(initialValue: existing?.note ?? "")
-        _pinned = State(initialValue: existing?.pinned ?? false)
-        _customCategory = State(initialValue: existing?.customCategory ?? "")
+        _customCategories = State(initialValue: existing?.customCategories ?? [])
     }
 
     private var isConfigurable: Bool { KnownCards.isConfigurable(name) }
-    private var isValid: Bool { !name.isEmpty && (!isConfigurable || !customCategory.isEmpty) }
+    private var slots: Int { KnownCards.slots(for: name) }
+
+    private var isValid: Bool {
+        guard !name.isEmpty else { return false }
+        if isConfigurable {
+            return customCategories.filter { !$0.isEmpty }.count == slots
+        }
+        return true
+    }
 
     var body: some View {
         NavigationStack {
@@ -49,35 +55,46 @@ struct CardEditView: View {
 
                 if isConfigurable {
                     Section {
-                        Button {
-                            showingCategoryPicker = true
-                        } label: {
-                            HStack {
-                                Text(customCategory.isEmpty ? "Select bonus category…" : customCategory)
-                                    .foregroundStyle(customCategory.isEmpty ? .secondary : .primary)
-                                Spacer()
-                                Image(systemName: "chevron.right")
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
+                        ForEach(0..<slots, id: \.self) { slot in
+                            Button {
+                                editingSlot = slot
+                            } label: {
+                                HStack {
+                                    let chosen = slot < customCategories.count ? customCategories[slot] : ""
+                                    Text(chosen.isEmpty ? "Select category…" : chosen)
+                                        .foregroundStyle(chosen.isEmpty ? .secondary : .primary)
+                                    Spacer()
+                                    Image(systemName: "chevron.right")
+                                        .font(.caption)
+                                        .foregroundStyle(.secondary)
+                                }
                             }
+                            .tint(.primary)
                         }
-                        .tint(.primary)
                     } header: {
-                        Text("Bonus Category")
+                        Text(slots > 1 ? "Bonus Categories" : "Bonus Category")
                     } footer: {
-                        Text("This card earns \(KnownCards.rewardText(for: name)) on your chosen category.")
+                        Text("This card earns \(KnownCards.rewardText(for: name)) on your chosen \(slots > 1 ? "categories" : "category").")
                             .foregroundStyle(.secondary)
                     }
                 }
 
                 Section("Note") {
-                    TextField("e.g. No foreign transaction fee", text: $note)
+                    TextEditor(text: $note)
                         .textInputAutocapitalization(.sentences)
+                        .frame(minHeight: 80)
+                        .overlay(alignment: .topLeading) {
+                            if note.isEmpty {
+                                Text("e.g. No foreign transaction fee")
+                                    .foregroundStyle(.tertiary)
+                                    .padding(.top, 8)
+                                    .padding(.leading, 4)
+                                    .allowsHitTesting(false)
+                            }
+                        }
                 }
 
-                Section {
-                    Toggle("Pin to top", isOn: $pinned)
-                }
+
             }
             .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
@@ -91,8 +108,7 @@ struct CardEditView: View {
                             id: existing?.id ?? UUID(),
                             name: name,
                             note: note.trimmingCharacters(in: .whitespaces),
-                            pinned: pinned,
-                            customCategory: isConfigurable ? customCategory : nil
+                            customCategories: isConfigurable ? customCategories.filter { !$0.isEmpty } : []
                         )
                         onSave(card)
                         dismiss()
@@ -102,14 +118,26 @@ struct CardEditView: View {
             }
             .sheet(isPresented: $showingCardPicker) {
                 CardPickerView(selected: $name) {
-                    // Clear custom category when card changes
-                    if !KnownCards.isConfigurable(name) { customCategory = "" }
+                    if !KnownCards.isConfigurable(name) { customCategories = [] }
+                    else { customCategories = Array(repeating: "", count: KnownCards.slots(for: name)) }
                 }
             }
-            .sheet(isPresented: $showingCategoryPicker) {
-                CategoryPickerView(selected: $customCategory)
+            .sheet(item: $editingSlot) { slot in
+                let binding = Binding<String>(
+                    get: { slot < customCategories.count ? customCategories[slot] : "" },
+                    set: { value in
+                        while customCategories.count <= slot { customCategories.append("") }
+                        customCategories[slot] = value
+                    }
+                )
+                CategoryPickerView(selected: binding, excludedCategories: categoriesExcludingSlot(slot))
             }
         }
+    }
+
+    private func categoriesExcludingSlot(_ slot: Int) -> Set<String> {
+        var used = Set(customCategories.enumerated().compactMap { i, c in i != slot && !c.isEmpty ? c : nil })
+        return used
     }
 }
 
@@ -152,10 +180,11 @@ struct CardPickerView: View {
 struct CategoryPickerView: View {
     @Environment(\.dismiss) private var dismiss
     @Binding var selected: String
+    var excludedCategories: Set<String> = []
     @State private var query = ""
 
     private var results: [String] {
-        let all = KnownCards.canonicalCategories.filter { $0 != "Everything Else" }
+        let all = KnownCards.canonicalCategories.filter { $0 != "Everything Else" && !excludedCategories.contains($0) }
         guard !query.isEmpty else { return all }
         let lower = query.lowercased()
         return all.filter { $0.lowercased().contains(lower) }
@@ -206,4 +235,8 @@ private struct CardPickerRow: View {
             }
         }
     }
+}
+
+extension Int: Identifiable {
+    public var id: Int { self }
 }

@@ -27,7 +27,6 @@ final class RewardStore {
             uniqueKeysWithValues: cards.enumerated().map { ($1.name, $0) }
         )
 
-        // Collect all candidate rules: (category, cardName, rewardText, numericValue, isCustom)
         var candidates: [(category: String, cardName: String, reward: String, value: Double, isCustom: Bool)] = []
 
         // Rotating quarterly categories (always 5%)
@@ -37,22 +36,37 @@ final class RewardStore {
             }
         }
 
-        // Static reward rules
-        for rule in rewardRules where cardNames.contains(rule.cardName) {
+        // Static reward rules — skip "Everything Else" here; handle it separately below
+        for rule in rewardRules where cardNames.contains(rule.cardName) && rule.category != "Everything Else" {
             let value = numericValue(rule.rewardText)
             candidates.append((category: rule.category, cardName: rule.cardName, reward: rule.rewardText, value: value, isCustom: false))
         }
 
-        // User-defined custom category rules
+        // User-defined custom categories for configurable cards
         for card in cards {
-            guard let customCategory = card.customCategory,
-                  KnownCards.isConfigurable(card.name) else { continue }
+            guard KnownCards.isConfigurable(card.name), !card.customCategories.isEmpty else { continue }
             let reward = KnownCards.rewardText(for: card.name)
             let value = numericValue(reward)
-            candidates.append((category: customCategory, cardName: card.name, reward: reward, value: value, isCustom: true))
+            for category in card.customCategories {
+                candidates.append((category: category, cardName: card.name, reward: reward, value: value, isCustom: true))
+            }
         }
 
-        // For each category, pick best rate; tie-break by My Cards order
+        // Everything Else: true catch-all — best flat rate across all user cards
+        var bestEverythingElse: (cardName: String, reward: String, value: Double, order: Int)?
+        for rule in rewardRules where cardNames.contains(rule.cardName) && rule.category == "Everything Else" {
+            let value = numericValue(rule.rewardText)
+            let order = cardOrder[rule.cardName] ?? Int.max
+            if let current = bestEverythingElse {
+                if value > current.value || (value == current.value && order < current.order) {
+                    bestEverythingElse = (rule.cardName, rule.rewardText, value, order)
+                }
+            } else {
+                bestEverythingElse = (rule.cardName, rule.rewardText, value, order)
+            }
+        }
+
+        // For each non-catch-all category, pick best rate; tie-break by My Cards order
         var bestByCategory: [String: (cardName: String, reward: String, value: Double, order: Int, isCustom: Bool)] = [:]
         for c in candidates {
             let order = cardOrder[c.cardName] ?? Int.max
@@ -65,7 +79,12 @@ final class RewardStore {
             }
         }
 
-        // Sort by canonical order, then alphabetically for any uncategorized
+        // Append Everything Else row if any card has a rate for it
+        if let ee = bestEverythingElse {
+            bestByCategory["Everything Else"] = (ee.cardName, ee.reward, ee.value, ee.order, false)
+        }
+
+        // Sort by canonical order, then alphabetically for any unlisted categories
         let canonicalOrder = Dictionary(uniqueKeysWithValues: KnownCards.canonicalCategories.enumerated().map { ($1, $0) })
         return bestByCategory.map { category, best in
             (category: category, cardName: best.cardName, reward: best.reward, isCustom: best.isCustom)
@@ -77,9 +96,9 @@ final class RewardStore {
         }
     }
 
-    // Parse "5%", "3x", "4%" etc. into a comparable Double
     private func numericValue(_ rewardText: String) -> Double {
-        let cleaned = rewardText.trimmingCharacters(in: .whitespaces)
+        let cleaned = rewardText
+            .trimmingCharacters(in: .whitespaces)
             .replacingOccurrences(of: "%", with: "")
             .replacingOccurrences(of: "x", with: "")
         return Double(cleaned) ?? 0

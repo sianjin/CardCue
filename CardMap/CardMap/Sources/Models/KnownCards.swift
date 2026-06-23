@@ -20,13 +20,13 @@ enum KnownCards {
     struct ConfigurableCard {
         let name: String
         let rewardText: String
+        let slots: Int  // how many bonus categories the user can choose
     }
 
     static let configurableCards: [ConfigurableCard] = [
-        ConfigurableCard(name: "Citi Custom Cash", rewardText: "5%"),
-        ConfigurableCard(name: "PayPal Debit Card", rewardText: "5%"),
-        ConfigurableCard(name: "Bank of America Customized Cash", rewardText: "3%"),
-        ConfigurableCard(name: "U.S. Bank Cash+", rewardText: "5%"),
+        ConfigurableCard(name: "Citi Custom Cash", rewardText: "5%", slots: 1),
+        ConfigurableCard(name: "Bank of America Customized Cash Rewards", rewardText: "3%", slots: 1),
+        ConfigurableCard(name: "U.S. Bank Cash+", rewardText: "5%", slots: 2),
     ]
 
     static func isConfigurable(_ cardName: String) -> Bool {
@@ -37,26 +37,57 @@ enum KnownCards {
         configurableCards.first { $0.name == cardName }?.rewardText ?? ""
     }
 
+    static func slots(for cardName: String) -> Int {
+        configurableCards.first { $0.name == cardName }?.slots ?? 1
+    }
+
+    // Canonical categories in display order.
+    // Do NOT add entries here without first adding them to MVP.md and getting approval.
     static let canonicalCategories: [String] = [
+        // Everyday
         "Groceries",
         "Gas",
         "Dining",
         "Drug Stores",
         "Transit & Commute",
-        "Flights",
-        "Hotels",
+        // Rideshare
+        "Rideshare – Uber",
+        "Rideshare – Lyft",
+        // Flights
+        "Flights – General",
+        "Flights – via Portal",
+        "Flights – Delta Only",
+        "Flights – United Only",
+        "Flights – Southwest Only",
+        "Flights – JetBlue Only",
+        "Flights – American Airlines Only",
+        "Flights – Alaska Airlines Only",
+        // Hotels
+        "Hotels – General",
+        "Hotels – via Portal",
+        "Hotels – Hyatt Only",
+        "Hotels – Hilton Only",
+        "Hotels – Marriott Only",
+        "Hotels – IHG Only",
+        "Hotels – Wyndham Only",
+        // Other travel
         "Car Rentals",
-        "Rideshare",
-        "Travel Portal",
+        // Entertainment & Lifestyle
         "Streaming",
         "Entertainment",
         "Fitness",
-        "Amazon",
-        "Wholesale Clubs",
+        // Shopping
+        "Amazon & Whole Foods",
+        "Costco",
+        "Sam's Club",
+        "BJ's Wholesale",
         "Home Improvement",
         "Online Shopping",
+        // Card-Specific
         "Apple Purchases",
         "PayPal Purchases",
+        "Rent",
+        // Catch-all
         "Everything Else",
     ]
 }

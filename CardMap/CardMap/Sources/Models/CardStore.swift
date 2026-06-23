@@ -44,12 +44,6 @@ final class CardStore: ObservableObject {
         save()
     }
 
-    func togglePin(_ card: UserCard) {
-        guard let index = cards.firstIndex(where: { $0.id == card.id }) else { return }
-        cards[index].pinned.toggle()
-        save()
-    }
-
     func saveCurrentOrder() {
         save()
     }

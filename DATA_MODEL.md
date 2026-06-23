@@ -4,98 +4,84 @@
 
 ## UserCard
 
+Stored in UserDefaults. Represents a card the user has saved.
+
 ```swift
 struct UserCard: Codable, Identifiable {
     let id: UUID
-
     var name: String
-
     var note: String
-
-    var pinned: Bool
+    var customCategories: [String]  // non-empty only for configurable cards (Citi Custom Cash, U.S. Bank Cash+, BofA Customized Cash Rewards)
 }
 ```
 
 Example:
-
 ```json
 {
   "id": "...",
-  "name": "Costco Visa",
-  "note": "Default gas card",
-  "pinned": true
+  "name": "Citi Custom Cash",
+  "note": "",
+  "customCategories": ["Dining"]
 }
 ```
 
+Migration note: old saves may contain `pinned: Bool` (ignored on decode) and `customCategory: String` (migrated to `customCategories: [String]` automatically).
+
 ## RewardRule
 
-Represents category mappings.
+Bundled in `reward_rules.json`. One entry per card-category pair.
 
 ```swift
 struct RewardRule: Codable {
     var cardName: String
-
     var category: String
-
     var rewardText: String
 }
 ```
 
 Example:
-
 ```json
 {
-  "cardName": "Costco Visa",
+  "cardName": "Costco Anywhere Visa",
   "category": "Gas",
-  "rewardText": "5%"
+  "rewardText": "4%"
 }
 ```
 
 ## QuarterlyCategory
 
-Used for rotating bonus cards.
+Bundled in `quarterly_categories.json`. Rotating 5% bonus categories per quarter.
 
 ```swift
 struct QuarterlyCategory: Codable {
     var cardName: String
-
-    var quarter: String
-
-    var categories: [String]
+    var quarter: String        // format: "2026Q3"
+    var categories: [String]   // canonical category names
 }
 ```
 
 Example:
-
 ```json
 {
-  "cardName": "Discover",
+  "cardName": "Chase Freedom Flex",
   "quarter": "2026Q3",
-  "categories": [
-    "Gas",
-    "EV Charging"
-  ]
+  "categories": ["Gas", "Transit & Commute", "Entertainment"]
 }
 ```
 
+Only include current and officially announced future quarters. See `RULES.md`.
+
 ## Storage
 
-Use:
+- `UserCard` — `UserDefaults`, key `"user_cards"`, encoded as JSON array
+- Category display order — `UserDefaults`, key `"category_order"`, managed by `CategoryOrderStore`
+- `RewardRule` and `QuarterlyCategory` — bundled JSON, read-only at runtime
 
-* UserDefaults
-* Codable JSON
-
-No databases.
-
-No cloud sync.
-
-No accounts.
+No databases. No cloud sync. No accounts.
 
 ## Source Files
 
-cards.json
-
-reward_rules.json
-
-quarterly_categories.json
-
+| File | Purpose |
+|------|---------|
+| `reward_rules.json` | All card reward rules |
+| `quarterly_categories.json` | Rotating bonus categories by quarter |

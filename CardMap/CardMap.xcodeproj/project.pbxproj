@@ -22,6 +22,7 @@
 		AA000013 /* RewardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100013 /* RewardStore.swift */; };
 		AA000014 /* KnownCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100014 /* KnownCards.swift */; };
 		AA000015 /* AppIconPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100015 /* AppIconPreview.swift */; };
+		AA000016 /* CategoryOrderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100016 /* CategoryOrderStore.swift */; };
 		AA000020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA100020 /* Assets.xcassets */; };
 		AA000021 /* reward_rules.json in Resources */ = {isa = PBXBuildFile; fileRef = AA100021 /* reward_rules.json */; };
 		AA000022 /* quarterly_categories.json in Resources */ = {isa = PBXBuildFile; fileRef = AA100022 /* quarterly_categories.json */; };
@@ -43,6 +44,7 @@
 		AA100013 /* RewardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStore.swift; sourceTree = "<group>"; };
 		AA100014 /* KnownCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownCards.swift; sourceTree = "<group>"; };
 		AA100015 /* AppIconPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconPreview.swift; sourceTree = "<group>"; };
+		AA100016 /* CategoryOrderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryOrderStore.swift; sourceTree = "<group>"; };
 		AA100020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA100021 /* reward_rules.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reward_rules.json; sourceTree = "<group>"; };
 		AA100022 /* quarterly_categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quarterly_categories.json; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				AA100012 /* CardStore.swift */,
 				AA100013 /* RewardStore.swift */,
 				AA100014 /* KnownCards.swift */,
+				AA100016 /* CategoryOrderStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				AA000013 /* RewardStore.swift in Sources */,
 				AA000014 /* KnownCards.swift in Sources */,
 				AA000015 /* AppIconPreview.swift in Sources */,
+				AA000016 /* CategoryOrderStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@ struct ContentView: View {
                 }
                 .tag(0)
 
-            QuickReferenceView()
+            QuickReferenceView(showingAbout: $showingAbout, showingPrivacy: $showingPrivacy)
                 .tabItem {
                     Label("Quick Reference", systemImage: "list.bullet.rectangle")
                 }

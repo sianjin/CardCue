@@ -1,74 +1,2182 @@
 [
-  { "cardName": "Costco Anywhere Visa by Citi", "category": "Gas", "rewardText": "5%" },
-  { "cardName": "Costco Anywhere Visa by Citi", "category": "Dining", "rewardText": "3%" },
-  { "cardName": "Costco Anywhere Visa by Citi", "category": "Flights", "rewardText": "3%" },
-  { "cardName": "Costco Anywhere Visa by Citi", "category": "Everything Else", "rewardText": "2%" },
-
-  { "cardName": "Fidelity Rewards Visa", "category": "Everything Else", "rewardText": "2%" },
-
-  { "cardName": "Chase Sapphire Preferred", "category": "Dining", "rewardText": "3x" },
-  { "cardName": "Chase Sapphire Preferred", "category": "Flights", "rewardText": "3x" },
-  { "cardName": "Chase Sapphire Preferred", "category": "Hotels", "rewardText": "3x" },
-  { "cardName": "Chase Sapphire Preferred", "category": "Car Rentals", "rewardText": "3x" },
-  { "cardName": "Chase Sapphire Preferred", "category": "Rideshare", "rewardText": "3x" },
-  { "cardName": "Chase Sapphire Preferred", "category": "Travel Portal", "rewardText": "5x" },
-  { "cardName": "Chase Sapphire Preferred", "category": "Groceries", "rewardText": "3x" },
-  { "cardName": "Chase Sapphire Preferred", "category": "Streaming", "rewardText": "3x" },
-  { "cardName": "Chase Sapphire Preferred", "category": "Everything Else", "rewardText": "1x" },
-
-  { "cardName": "Chase Sapphire Reserve", "category": "Dining", "rewardText": "3x" },
-  { "cardName": "Chase Sapphire Reserve", "category": "Flights", "rewardText": "3x" },
-  { "cardName": "Chase Sapphire Reserve", "category": "Hotels", "rewardText": "3x" },
-  { "cardName": "Chase Sapphire Reserve", "category": "Car Rentals", "rewardText": "3x" },
-  { "cardName": "Chase Sapphire Reserve", "category": "Rideshare", "rewardText": "3x" },
-  { "cardName": "Chase Sapphire Reserve", "category": "Travel Portal", "rewardText": "10x" },
-  { "cardName": "Chase Sapphire Reserve", "category": "Everything Else", "rewardText": "1x" },
-
-  { "cardName": "Chase Freedom Flex", "category": "Everything Else", "rewardText": "1%" },
-
-  { "cardName": "Chase Freedom Unlimited", "category": "Dining", "rewardText": "3%" },
-  { "cardName": "Chase Freedom Unlimited", "category": "Flights", "rewardText": "5%" },
-  { "cardName": "Chase Freedom Unlimited", "category": "Everything Else", "rewardText": "1.5%" },
-
-  { "cardName": "Discover it Cash Back", "category": "Everything Else", "rewardText": "1%" },
-
-  { "cardName": "PayPal Cashback Mastercard", "category": "PayPal Purchases", "rewardText": "3%" },
-  { "cardName": "PayPal Cashback Mastercard", "category": "Everything Else", "rewardText": "1.5%" },
-
-  { "cardName": "Apple Card", "category": "Apple Purchases", "rewardText": "3%" },
-  { "cardName": "Apple Card", "category": "Everything Else", "rewardText": "1%" },
-
-  { "cardName": "Citi Double Cash", "category": "Everything Else", "rewardText": "2%" },
-
-  { "cardName": "Wells Fargo Active Cash", "category": "Everything Else", "rewardText": "2%" },
-
-  { "cardName": "Amex Blue Cash Preferred", "category": "Groceries", "rewardText": "6%" },
-  { "cardName": "Amex Blue Cash Preferred", "category": "Streaming", "rewardText": "6%" },
-  { "cardName": "Amex Blue Cash Preferred", "category": "Transit & Commute", "rewardText": "3%" },
-  { "cardName": "Amex Blue Cash Preferred", "category": "Gas", "rewardText": "3%" },
-  { "cardName": "Amex Blue Cash Preferred", "category": "Everything Else", "rewardText": "1%" },
-
-  { "cardName": "Amex Blue Cash Everyday", "category": "Groceries", "rewardText": "3%" },
-  { "cardName": "Amex Blue Cash Everyday", "category": "Gas", "rewardText": "2%" },
-  { "cardName": "Amex Blue Cash Everyday", "category": "Online Shopping", "rewardText": "2%" },
-  { "cardName": "Amex Blue Cash Everyday", "category": "Everything Else", "rewardText": "1%" },
-
-  { "cardName": "Amex Gold Card", "category": "Dining", "rewardText": "4x" },
-  { "cardName": "Amex Gold Card", "category": "Groceries", "rewardText": "4x" },
-  { "cardName": "Amex Gold Card", "category": "Flights", "rewardText": "3x" },
-  { "cardName": "Amex Gold Card", "category": "Everything Else", "rewardText": "1x" },
-
-  { "cardName": "Capital One Venture", "category": "Travel Portal", "rewardText": "5x" },
-  { "cardName": "Capital One Venture", "category": "Everything Else", "rewardText": "2x" },
-
-  { "cardName": "Capital One Venture X", "category": "Travel Portal", "rewardText": "10x" },
-  { "cardName": "Capital One Venture X", "category": "Flights", "rewardText": "5x" },
-  { "cardName": "Capital One Venture X", "category": "Hotels", "rewardText": "5x" },
-  { "cardName": "Capital One Venture X", "category": "Everything Else", "rewardText": "2x" },
-
-  { "cardName": "Capital One Savor", "category": "Dining", "rewardText": "4%" },
-  { "cardName": "Capital One Savor", "category": "Entertainment", "rewardText": "4%" },
-  { "cardName": "Capital One Savor", "category": "Groceries", "rewardText": "3%" },
-  { "cardName": "Capital One Savor", "category": "Streaming", "rewardText": "8%" },
-  { "cardName": "Capital One Savor", "category": "Everything Else", "rewardText": "1%" }
+  {
+    "cardName": "Chase Sapphire Preferred",
+    "category": "Flights \u2013 via Portal",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Chase Sapphire Preferred",
+    "category": "Dining",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Sapphire Preferred",
+    "category": "Groceries",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Sapphire Preferred",
+    "category": "Streaming",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Sapphire Preferred",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Sapphire Preferred",
+    "category": "Hotels \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Sapphire Preferred",
+    "category": "Car Rentals",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Sapphire Preferred",
+    "category": "Rideshare \u2013 Lyft",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Sapphire Preferred",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Chase Sapphire Reserve",
+    "category": "Hotels \u2013 via Portal",
+    "rewardText": "10x"
+  },
+  {
+    "cardName": "Chase Sapphire Reserve",
+    "category": "Flights \u2013 via Portal",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Sapphire Reserve",
+    "category": "Dining",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Sapphire Reserve",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Sapphire Reserve",
+    "category": "Hotels \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Sapphire Reserve",
+    "category": "Car Rentals",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Sapphire Reserve",
+    "category": "Rideshare \u2013 Lyft",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Sapphire Reserve",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Chase Freedom Flex",
+    "category": "Dining",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Chase Freedom Flex",
+    "category": "Drug Stores",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Chase Freedom Flex",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Chase Freedom Unlimited",
+    "category": "Flights \u2013 via Portal",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Chase Freedom Unlimited",
+    "category": "Dining",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Chase Freedom Unlimited",
+    "category": "Drug Stores",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Chase Freedom Unlimited",
+    "category": "Everything Else",
+    "rewardText": "1.5%"
+  },
+  {
+    "cardName": "Chase Freedom Rise",
+    "category": "Everything Else",
+    "rewardText": "1.5%"
+  },
+  {
+    "cardName": "Chase Ink Business Cash",
+    "category": "Online Shopping",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Chase Ink Business Cash",
+    "category": "Gas",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Chase Ink Business Cash",
+    "category": "Dining",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Chase Ink Business Cash",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Chase Ink Business Preferred",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Ink Business Preferred",
+    "category": "Hotels \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Ink Business Preferred",
+    "category": "Car Rentals",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Ink Business Preferred",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Chase Ink Business Unlimited",
+    "category": "Everything Else",
+    "rewardText": "1.5%"
+  },
+  {
+    "cardName": "Chase Ink Business Premier",
+    "category": "Flights \u2013 via Portal",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Chase Ink Business Premier",
+    "category": "Everything Else",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Chase Amazon Prime Visa",
+    "category": "Amazon & Whole Foods",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Chase Amazon Prime Visa",
+    "category": "Dining",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Chase Amazon Prime Visa",
+    "category": "Gas",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Chase Amazon Prime Visa",
+    "category": "Transit & Commute",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Chase Amazon Prime Visa",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Chase Amazon Visa",
+    "category": "Amazon & Whole Foods",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Chase Amazon Visa",
+    "category": "Drug Stores",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Chase Amazon Visa",
+    "category": "Gas",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Chase Amazon Visa",
+    "category": "Dining",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Chase Amazon Visa",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Chase World of Hyatt",
+    "category": "Hotels \u2013 Hyatt Only",
+    "rewardText": "9x"
+  },
+  {
+    "cardName": "Chase World of Hyatt",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase World of Hyatt",
+    "category": "Flights \u2013 General",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase World of Hyatt",
+    "category": "Fitness",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase World of Hyatt",
+    "category": "Transit & Commute",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase World of Hyatt",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Chase World of Hyatt Business",
+    "category": "Hotels \u2013 Hyatt Only",
+    "rewardText": "9x"
+  },
+  {
+    "cardName": "Chase World of Hyatt Business",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase World of Hyatt Business",
+    "category": "Gas",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase World of Hyatt Business",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Chase United Explorer",
+    "category": "Flights \u2013 United Only",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase United Explorer",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase United Explorer",
+    "category": "Hotels \u2013 General",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase United Explorer",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Chase United Club Infinite",
+    "category": "Flights \u2013 United Only",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Chase United Club Infinite",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase United Club Infinite",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Chase United Quest",
+    "category": "Flights \u2013 United Only",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase United Quest",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase United Quest",
+    "category": "Hotels \u2013 General",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase United Quest",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Chase United Gateway",
+    "category": "Flights \u2013 United Only",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase United Gateway",
+    "category": "Gas",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase United Gateway",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Chase Southwest Rapid Rewards Plus",
+    "category": "Flights \u2013 Southwest Only",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase Southwest Rapid Rewards Plus",
+    "category": "Hotels \u2013 General",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase Southwest Rapid Rewards Plus",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Chase Southwest Rapid Rewards Premier",
+    "category": "Flights \u2013 Southwest Only",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Southwest Rapid Rewards Premier",
+    "category": "Hotels \u2013 General",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase Southwest Rapid Rewards Premier",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Chase Southwest Rapid Rewards Priority",
+    "category": "Flights \u2013 Southwest Only",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Southwest Rapid Rewards Priority",
+    "category": "Hotels \u2013 General",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase Southwest Rapid Rewards Priority",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Chase IHG One Rewards Premier",
+    "category": "Hotels \u2013 IHG Only",
+    "rewardText": "26x"
+  },
+  {
+    "cardName": "Chase IHG One Rewards Premier",
+    "category": "Flights \u2013 General",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Chase IHG One Rewards Premier",
+    "category": "Car Rentals",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Chase IHG One Rewards Premier",
+    "category": "Dining",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase IHG One Rewards Premier",
+    "category": "Gas",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase IHG One Rewards Premier",
+    "category": "Everything Else",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase IHG One Rewards Traveler",
+    "category": "Hotels \u2013 IHG Only",
+    "rewardText": "17x"
+  },
+  {
+    "cardName": "Chase IHG One Rewards Traveler",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase IHG One Rewards Traveler",
+    "category": "Dining",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase IHG One Rewards Traveler",
+    "category": "Everything Else",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase Marriott Bonvoy Boundless",
+    "category": "Hotels \u2013 Marriott Only",
+    "rewardText": "6x"
+  },
+  {
+    "cardName": "Chase Marriott Bonvoy Boundless",
+    "category": "Groceries",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Marriott Bonvoy Boundless",
+    "category": "Gas",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Marriott Bonvoy Boundless",
+    "category": "Dining",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Marriott Bonvoy Boundless",
+    "category": "Everything Else",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase Marriott Bonvoy Bold",
+    "category": "Hotels \u2013 Marriott Only",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Marriott Bonvoy Bold",
+    "category": "Flights \u2013 General",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase Marriott Bonvoy Bold",
+    "category": "Car Rentals",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase Marriott Bonvoy Bold",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Chase Marriott Bonvoy Bountiful",
+    "category": "Hotels \u2013 Marriott Only",
+    "rewardText": "6x"
+  },
+  {
+    "cardName": "Chase Marriott Bonvoy Bountiful",
+    "category": "Groceries",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Chase Marriott Bonvoy Bountiful",
+    "category": "Dining",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Chase Marriott Bonvoy Bountiful",
+    "category": "Everything Else",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase Disney Visa",
+    "category": "Entertainment",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Chase Disney Visa",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Chase Disney Premier Visa",
+    "category": "Entertainment",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Chase Disney Premier Visa",
+    "category": "Dining",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Chase Disney Premier Visa",
+    "category": "Gas",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Chase Disney Premier Visa",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Chase Aer Lingus Visa Signature",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Aer Lingus Visa Signature",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase Aer Lingus Visa Signature",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Chase Iberia Visa Signature",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Chase Iberia Visa Signature",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Chase Iberia Visa Signature",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Amex Platinum",
+    "category": "Flights \u2013 via Portal",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Amex Platinum",
+    "category": "Flights \u2013 General",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Amex Platinum",
+    "category": "Hotels \u2013 via Portal",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Amex Platinum",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Amex Business Platinum",
+    "category": "Flights \u2013 via Portal",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Amex Business Platinum",
+    "category": "Flights \u2013 General",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Amex Business Platinum",
+    "category": "Hotels \u2013 via Portal",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Amex Business Platinum",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Amex Gold Card",
+    "category": "Dining",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Amex Gold Card",
+    "category": "Groceries",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Amex Gold Card",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Gold Card",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Amex Business Gold",
+    "category": "Flights \u2013 via Portal",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Business Gold",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Amex Green Card",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Green Card",
+    "category": "Hotels \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Green Card",
+    "category": "Car Rentals",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Green Card",
+    "category": "Transit & Commute",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Green Card",
+    "category": "Dining",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Green Card",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Amex Blue Cash Preferred",
+    "category": "Groceries",
+    "rewardText": "6%"
+  },
+  {
+    "cardName": "Amex Blue Cash Preferred",
+    "category": "Streaming",
+    "rewardText": "6%"
+  },
+  {
+    "cardName": "Amex Blue Cash Preferred",
+    "category": "Transit & Commute",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Amex Blue Cash Preferred",
+    "category": "Gas",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Amex Blue Cash Preferred",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Amex Blue Cash Everyday",
+    "category": "Groceries",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Amex Blue Cash Everyday",
+    "category": "Online Shopping",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Amex Blue Cash Everyday",
+    "category": "Gas",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Amex Blue Cash Everyday",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Amex EveryDay",
+    "category": "Groceries",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex EveryDay",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Amex EveryDay Preferred",
+    "category": "Groceries",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex EveryDay Preferred",
+    "category": "Gas",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex EveryDay Preferred",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Amex Blue Business Cash",
+    "category": "Everything Else",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Amex Blue Business Plus",
+    "category": "Everything Else",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Cash Magnet",
+    "category": "Everything Else",
+    "rewardText": "1.5%"
+  },
+  {
+    "cardName": "Amex Hilton Honors",
+    "category": "Hotels \u2013 Hilton Only",
+    "rewardText": "7x"
+  },
+  {
+    "cardName": "Amex Hilton Honors",
+    "category": "Dining",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Amex Hilton Honors",
+    "category": "Groceries",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Amex Hilton Honors",
+    "category": "Gas",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Amex Hilton Honors",
+    "category": "Everything Else",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Hilton Honors Surpass",
+    "category": "Hotels \u2013 Hilton Only",
+    "rewardText": "12x"
+  },
+  {
+    "cardName": "Amex Hilton Honors Surpass",
+    "category": "Dining",
+    "rewardText": "6x"
+  },
+  {
+    "cardName": "Amex Hilton Honors Surpass",
+    "category": "Groceries",
+    "rewardText": "6x"
+  },
+  {
+    "cardName": "Amex Hilton Honors Surpass",
+    "category": "Gas",
+    "rewardText": "6x"
+  },
+  {
+    "cardName": "Amex Hilton Honors Surpass",
+    "category": "Everything Else",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Hilton Honors Aspire",
+    "category": "Hotels \u2013 Hilton Only",
+    "rewardText": "14x"
+  },
+  {
+    "cardName": "Amex Hilton Honors Aspire",
+    "category": "Flights \u2013 General",
+    "rewardText": "7x"
+  },
+  {
+    "cardName": "Amex Hilton Honors Aspire",
+    "category": "Dining",
+    "rewardText": "7x"
+  },
+  {
+    "cardName": "Amex Hilton Honors Aspire",
+    "category": "Everything Else",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Hilton Honors Business",
+    "category": "Hotels \u2013 Hilton Only",
+    "rewardText": "12x"
+  },
+  {
+    "cardName": "Amex Hilton Honors Business",
+    "category": "Dining",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Amex Hilton Honors Business",
+    "category": "Gas",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Amex Hilton Honors Business",
+    "category": "Everything Else",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy",
+    "category": "Hotels \u2013 Marriott Only",
+    "rewardText": "6x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy",
+    "category": "Dining",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy",
+    "category": "Flights \u2013 General",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy",
+    "category": "Everything Else",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy Brilliant",
+    "category": "Hotels \u2013 Marriott Only",
+    "rewardText": "6x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy Brilliant",
+    "category": "Dining",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy Brilliant",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy Brilliant",
+    "category": "Everything Else",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy Bevy",
+    "category": "Hotels \u2013 Marriott Only",
+    "rewardText": "6x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy Bevy",
+    "category": "Groceries",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy Bevy",
+    "category": "Dining",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy Bevy",
+    "category": "Everything Else",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy Business",
+    "category": "Hotels \u2013 Marriott Only",
+    "rewardText": "6x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy Business",
+    "category": "Dining",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy Business",
+    "category": "Gas",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Amex Marriott Bonvoy Business",
+    "category": "Everything Else",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Blue",
+    "category": "Flights \u2013 Delta Only",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Blue",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Blue",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Gold",
+    "category": "Flights \u2013 Delta Only",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Gold",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Gold",
+    "category": "Groceries",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Gold",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Platinum",
+    "category": "Flights \u2013 Delta Only",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Platinum",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Platinum",
+    "category": "Groceries",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Platinum",
+    "category": "Hotels \u2013 General",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Platinum",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Reserve",
+    "category": "Flights \u2013 Delta Only",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Reserve",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Gold Business",
+    "category": "Flights \u2013 Delta Only",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Gold Business",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Gold Business",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Platinum Business",
+    "category": "Flights \u2013 Delta Only",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Platinum Business",
+    "category": "Dining",
+    "rewardText": "1.5x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Platinum Business",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Reserve Business",
+    "category": "Flights \u2013 Delta Only",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Amex Delta SkyMiles Reserve Business",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Citi Strata Premier",
+    "category": "Hotels \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Citi Strata Premier",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Citi Strata Premier",
+    "category": "Dining",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Citi Strata Premier",
+    "category": "Groceries",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Citi Strata Premier",
+    "category": "Gas",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Citi Strata Premier",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Citi Strata Elite",
+    "category": "Hotels \u2013 General",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Citi Strata Elite",
+    "category": "Flights \u2013 General",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Citi Strata Elite",
+    "category": "Dining",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Citi Strata Elite",
+    "category": "Groceries",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Citi Strata Elite",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Citi Premier",
+    "category": "Hotels \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Citi Premier",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Citi Premier",
+    "category": "Dining",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Citi Premier",
+    "category": "Groceries",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Citi Premier",
+    "category": "Gas",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Citi Premier",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Citi Double Cash",
+    "category": "Everything Else",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Citi Rewards+",
+    "category": "Groceries",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Citi Rewards+",
+    "category": "Gas",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Citi Rewards+",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Citi AT&T Points Plus",
+    "category": "Gas",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Citi AT&T Points Plus",
+    "category": "Groceries",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Citi AT&T Points Plus",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Citi AAdvantage Platinum Select",
+    "category": "Flights \u2013 American Airlines Only",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Citi AAdvantage Platinum Select",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Citi AAdvantage Platinum Select",
+    "category": "Gas",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Citi AAdvantage Platinum Select",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Citi AAdvantage Executive World Elite",
+    "category": "Flights \u2013 American Airlines Only",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Citi AAdvantage Executive World Elite",
+    "category": "Hotels \u2013 General",
+    "rewardText": "10x"
+  },
+  {
+    "cardName": "Citi AAdvantage Executive World Elite",
+    "category": "Car Rentals",
+    "rewardText": "10x"
+  },
+  {
+    "cardName": "Citi AAdvantage Executive World Elite",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Citi AAdvantage Executive World Elite",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Citi AAdvantage MileUp",
+    "category": "Flights \u2013 American Airlines Only",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Citi AAdvantage MileUp",
+    "category": "Groceries",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Citi AAdvantage MileUp",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Costco Anywhere Visa by Citi",
+    "category": "Gas",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Costco Anywhere Visa by Citi",
+    "category": "Dining",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Costco Anywhere Visa by Citi",
+    "category": "Flights \u2013 General",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Costco Anywhere Visa by Citi",
+    "category": "Costco",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Costco Anywhere Visa by Citi",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Costco Anywhere Visa Business by Citi",
+    "category": "Gas",
+    "rewardText": "4%"
+  },
+  {
+    "cardName": "Costco Anywhere Visa Business by Citi",
+    "category": "Dining",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Costco Anywhere Visa Business by Citi",
+    "category": "Flights \u2013 General",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Costco Anywhere Visa Business by Citi",
+    "category": "Costco",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Costco Anywhere Visa Business by Citi",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Bank of America Premium Rewards",
+    "category": "Flights \u2013 General",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Bank of America Premium Rewards",
+    "category": "Hotels \u2013 General",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Bank of America Premium Rewards",
+    "category": "Car Rentals",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Bank of America Premium Rewards",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Bank of America Premium Rewards",
+    "category": "Everything Else",
+    "rewardText": "1.5x"
+  },
+  {
+    "cardName": "Bank of America Premium Rewards Elite",
+    "category": "Flights \u2013 General",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Bank of America Premium Rewards Elite",
+    "category": "Hotels \u2013 General",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Bank of America Premium Rewards Elite",
+    "category": "Car Rentals",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Bank of America Premium Rewards Elite",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Bank of America Premium Rewards Elite",
+    "category": "Everything Else",
+    "rewardText": "1.5x"
+  },
+  {
+    "cardName": "Bank of America Unlimited Cash Rewards",
+    "category": "Everything Else",
+    "rewardText": "1.5%"
+  },
+  {
+    "cardName": "Bank of America Travel Rewards",
+    "category": "Everything Else",
+    "rewardText": "1.5x"
+  },
+  {
+    "cardName": "Bank of America Business Advantage Unlimited Cash Rewards",
+    "category": "Everything Else",
+    "rewardText": "1.5%"
+  },
+  {
+    "cardName": "Bank of America Business Advantage Travel Rewards",
+    "category": "Flights \u2013 via Portal",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Bank of America Business Advantage Travel Rewards",
+    "category": "Everything Else",
+    "rewardText": "1.5x"
+  },
+  {
+    "cardName": "Bank of America Alaska Airlines",
+    "category": "Flights \u2013 Alaska Airlines Only",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Bank of America Alaska Airlines",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Bank of America Alaska Airlines Business",
+    "category": "Flights \u2013 Alaska Airlines Only",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Bank of America Alaska Airlines Business",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Bank of America Air France KLM World Elite",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Bank of America Air France KLM World Elite",
+    "category": "Dining",
+    "rewardText": "1.5x"
+  },
+  {
+    "cardName": "Bank of America Air France KLM World Elite",
+    "category": "Everything Else",
+    "rewardText": "1.5x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Reserve",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Reserve",
+    "category": "Hotels \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Reserve",
+    "category": "Car Rentals",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Reserve",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Connect",
+    "category": "Flights \u2013 General",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Connect",
+    "category": "Hotels \u2013 General",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Connect",
+    "category": "Gas",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Connect",
+    "category": "Streaming",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Connect",
+    "category": "Groceries",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Connect",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Go",
+    "category": "Dining",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Go",
+    "category": "Groceries",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Go",
+    "category": "Gas",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Go",
+    "category": "Streaming",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "U.S. Bank Altitude Go",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "U.S. Bank Shopper Cash Rewards",
+    "category": "Everything Else",
+    "rewardText": "1.5%"
+  },
+  {
+    "cardName": "U.S. Bank Business Triple Cash Rewards",
+    "category": "Gas",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "U.S. Bank Business Triple Cash Rewards",
+    "category": "Dining",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "U.S. Bank Business Triple Cash Rewards",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Wells Fargo Active Cash",
+    "category": "Everything Else",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Wells Fargo Autograph",
+    "category": "Dining",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Wells Fargo Autograph",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Wells Fargo Autograph",
+    "category": "Hotels \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Wells Fargo Autograph",
+    "category": "Car Rentals",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Wells Fargo Autograph",
+    "category": "Gas",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Wells Fargo Autograph",
+    "category": "Transit & Commute",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Wells Fargo Autograph",
+    "category": "Streaming",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Wells Fargo Autograph",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Wells Fargo Autograph Journey",
+    "category": "Hotels \u2013 General",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Wells Fargo Autograph Journey",
+    "category": "Flights \u2013 General",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Wells Fargo Autograph Journey",
+    "category": "Dining",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Wells Fargo Autograph Journey",
+    "category": "Car Rentals",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Wells Fargo Autograph Journey",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Capital One Venture X",
+    "category": "Hotels \u2013 via Portal",
+    "rewardText": "10x"
+  },
+  {
+    "cardName": "Capital One Venture X",
+    "category": "Flights \u2013 via Portal",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Capital One Venture X",
+    "category": "Hotels \u2013 General",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Capital One Venture X",
+    "category": "Flights \u2013 General",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Capital One Venture X",
+    "category": "Everything Else",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Capital One Venture X Business",
+    "category": "Hotels \u2013 via Portal",
+    "rewardText": "10x"
+  },
+  {
+    "cardName": "Capital One Venture X Business",
+    "category": "Flights \u2013 via Portal",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Capital One Venture X Business",
+    "category": "Hotels \u2013 General",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Capital One Venture X Business",
+    "category": "Flights \u2013 General",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Capital One Venture X Business",
+    "category": "Everything Else",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Capital One Venture",
+    "category": "Hotels \u2013 via Portal",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Capital One Venture",
+    "category": "Car Rentals",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Capital One Venture",
+    "category": "Everything Else",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Capital One VentureOne",
+    "category": "Hotels \u2013 via Portal",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Capital One VentureOne",
+    "category": "Car Rentals",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Capital One VentureOne",
+    "category": "Everything Else",
+    "rewardText": "1.25x"
+  },
+  {
+    "cardName": "Capital One Savor",
+    "category": "Streaming",
+    "rewardText": "8%"
+  },
+  {
+    "cardName": "Capital One Savor",
+    "category": "Dining",
+    "rewardText": "4%"
+  },
+  {
+    "cardName": "Capital One Savor",
+    "category": "Entertainment",
+    "rewardText": "4%"
+  },
+  {
+    "cardName": "Capital One Savor",
+    "category": "Groceries",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Capital One Savor",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Capital One SavorOne",
+    "category": "Dining",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Capital One SavorOne",
+    "category": "Entertainment",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Capital One SavorOne",
+    "category": "Groceries",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Capital One SavorOne",
+    "category": "Streaming",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Capital One SavorOne",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Capital One Quicksilver",
+    "category": "Hotels \u2013 via Portal",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Capital One Quicksilver",
+    "category": "Car Rentals",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Capital One Quicksilver",
+    "category": "Everything Else",
+    "rewardText": "1.5%"
+  },
+  {
+    "cardName": "Capital One QuicksilverOne",
+    "category": "Hotels \u2013 via Portal",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Capital One QuicksilverOne",
+    "category": "Car Rentals",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Capital One QuicksilverOne",
+    "category": "Everything Else",
+    "rewardText": "1.5%"
+  },
+  {
+    "cardName": "Capital One Spark Cash Plus",
+    "category": "Hotels \u2013 via Portal",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Capital One Spark Cash Plus",
+    "category": "Car Rentals",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Capital One Spark Cash Plus",
+    "category": "Everything Else",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Capital One Spark Miles",
+    "category": "Hotels \u2013 via Portal",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Capital One Spark Miles",
+    "category": "Car Rentals",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Capital One Spark Miles",
+    "category": "Everything Else",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Capital One Spark Miles Select",
+    "category": "Hotels \u2013 via Portal",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Capital One Spark Miles Select",
+    "category": "Car Rentals",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Capital One Spark Miles Select",
+    "category": "Everything Else",
+    "rewardText": "1.5x"
+  },
+  {
+    "cardName": "Capital One Spark Cash Select",
+    "category": "Hotels \u2013 via Portal",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Capital One Spark Cash Select",
+    "category": "Car Rentals",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Capital One Spark Cash Select",
+    "category": "Everything Else",
+    "rewardText": "1.5%"
+  },
+  {
+    "cardName": "Capital One Walmart Rewards Mastercard",
+    "category": "Online Shopping",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Capital One Walmart Rewards Mastercard",
+    "category": "Groceries",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Capital One Walmart Rewards Mastercard",
+    "category": "Flights \u2013 General",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Capital One Walmart Rewards Mastercard",
+    "category": "Dining",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Capital One Walmart Rewards Mastercard",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Discover it Cash Back",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Discover it Chrome",
+    "category": "Gas",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Discover it Chrome",
+    "category": "Dining",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Discover it Chrome",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Discover it Miles",
+    "category": "Everything Else",
+    "rewardText": "1.5x"
+  },
+  {
+    "cardName": "Discover it Secured",
+    "category": "Gas",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Discover it Secured",
+    "category": "Dining",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Discover it Secured",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Discover it Student Cash Back",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Discover it Student Chrome",
+    "category": "Gas",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Discover it Student Chrome",
+    "category": "Dining",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Discover it Student Chrome",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Apple Card",
+    "category": "Apple Purchases",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Apple Card",
+    "category": "Rideshare \u2013 Uber",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Apple Card",
+    "category": "Dining",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Apple Card",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "PayPal Cashback Mastercard",
+    "category": "PayPal Purchases",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "PayPal Cashback Mastercard",
+    "category": "Everything Else",
+    "rewardText": "1.5%"
+  },
+  {
+    "cardName": "Fidelity Rewards Visa Signature",
+    "category": "Everything Else",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Robinhood Gold Card",
+    "category": "Everything Else",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Robinhood Gold Card",
+    "category": "Groceries",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Robinhood Gold Card",
+    "category": "Gas",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Robinhood Gold Card",
+    "category": "Dining",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Robinhood Gold Card",
+    "category": "Drug Stores",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Robinhood Gold Card",
+    "category": "Flights \u2013 General",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Robinhood Gold Card",
+    "category": "Hotels \u2013 General",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Robinhood Gold Card",
+    "category": "Car Rentals",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Robinhood Gold Card",
+    "category": "Streaming",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Robinhood Gold Card",
+    "category": "Entertainment",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Robinhood Gold Card",
+    "category": "Online Shopping",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Barclays JetBlue Plus",
+    "category": "Flights \u2013 JetBlue Only",
+    "rewardText": "6x"
+  },
+  {
+    "cardName": "Barclays JetBlue Plus",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Barclays JetBlue Plus",
+    "category": "Groceries",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Barclays JetBlue Plus",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Barclays JetBlue",
+    "category": "Flights \u2013 JetBlue Only",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Barclays JetBlue",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Barclays JetBlue",
+    "category": "Groceries",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Barclays JetBlue",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Barclays JetBlue Business",
+    "category": "Flights \u2013 JetBlue Only",
+    "rewardText": "6x"
+  },
+  {
+    "cardName": "Barclays JetBlue Business",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Barclays JetBlue Business",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Barclays Wyndham Rewards Earner Plus",
+    "category": "Hotels \u2013 Wyndham Only",
+    "rewardText": "6x"
+  },
+  {
+    "cardName": "Barclays Wyndham Rewards Earner Plus",
+    "category": "Gas",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Barclays Wyndham Rewards Earner Plus",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Barclays Wyndham Rewards Earner Plus",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Barclays Wyndham Rewards Earner Business",
+    "category": "Hotels \u2013 Wyndham Only",
+    "rewardText": "8x"
+  },
+  {
+    "cardName": "Barclays Wyndham Rewards Earner Business",
+    "category": "Gas",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Barclays Wyndham Rewards Earner Business",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Barclays Hawaiian Airlines World Elite Mastercard",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Barclays Hawaiian Airlines World Elite Mastercard",
+    "category": "Gas",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Barclays Hawaiian Airlines World Elite Mastercard",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Barclays Hawaiian Airlines World Elite Mastercard",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Barclays Aviator Red World Elite Mastercard",
+    "category": "Flights \u2013 American Airlines Only",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Barclays Aviator Red World Elite Mastercard",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Barclays Aviator Silver World Elite Mastercard",
+    "category": "Flights \u2013 American Airlines Only",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Barclays Aviator Silver World Elite Mastercard",
+    "category": "Hotels \u2013 General",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Barclays Aviator Silver World Elite Mastercard",
+    "category": "Car Rentals",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Barclays Aviator Silver World Elite Mastercard",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Synchrony Sam's Club Mastercard",
+    "category": "Sam's Club",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Synchrony Sam's Club Mastercard",
+    "category": "Gas",
+    "rewardText": "5%"
+  },
+  {
+    "cardName": "Synchrony Sam's Club Mastercard",
+    "category": "Dining",
+    "rewardText": "3%"
+  },
+  {
+    "cardName": "Synchrony Sam's Club Mastercard",
+    "category": "Flights \u2013 General",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Synchrony Sam's Club Mastercard",
+    "category": "Everything Else",
+    "rewardText": "1%"
+  },
+  {
+    "cardName": "Synchrony Premier World Mastercard",
+    "category": "Everything Else",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Navy Federal More Rewards American Express",
+    "category": "Groceries",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Navy Federal More Rewards American Express",
+    "category": "Gas",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Navy Federal More Rewards American Express",
+    "category": "Dining",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Navy Federal More Rewards American Express",
+    "category": "Transit & Commute",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Navy Federal More Rewards American Express",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Navy Federal cashRewards Visa Signature",
+    "category": "Everything Else",
+    "rewardText": "1.75%"
+  },
+  {
+    "cardName": "Navy Federal Flagship Rewards Visa Signature",
+    "category": "Flights \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Navy Federal Flagship Rewards Visa Signature",
+    "category": "Hotels \u2013 General",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Navy Federal Flagship Rewards Visa Signature",
+    "category": "Car Rentals",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Navy Federal Flagship Rewards Visa Signature",
+    "category": "Everything Else",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "PenFed Platinum Rewards Visa Signature",
+    "category": "Gas",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "PenFed Platinum Rewards Visa Signature",
+    "category": "Groceries",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "PenFed Platinum Rewards Visa Signature",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "PenFed Power Cash Rewards Visa Signature",
+    "category": "Everything Else",
+    "rewardText": "2%"
+  },
+  {
+    "cardName": "Bread Cashback Amex",
+    "category": "Everything Else",
+    "rewardText": "2%"
+  }
 ]

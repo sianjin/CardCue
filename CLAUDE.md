@@ -4,6 +4,14 @@
 
 Read this file before making any code changes.
 
+## Related Docs
+
+- `MVP.md` — canonical category list and screen specs (source of truth for categories)
+- `RULES.md` — card name rules, category rules, quarterly data rules
+- `DATA_MODEL.md` — current struct definitions and storage layout
+
+Update `DATA_MODEL.md` whenever there is a structural change to a model or storage key.
+
 ## Product Philosophy
 
 CardMap is NOT a fintech platform.
