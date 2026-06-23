@@ -67,6 +67,7 @@ Apply subcategories only where there is a meaningful accuracy difference between
 
 **Everyday**
 - Groceries
+- Groceries – Online *(online orders, pickup, and delivery only; e.g. CSP earns 3x here)*
 - Gas
 - Dining
 - Drug Stores

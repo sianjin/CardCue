@@ -46,6 +46,7 @@ enum KnownCards {
     static let canonicalCategories: [String] = [
         // Everyday
         "Groceries",
+        "Groceries – Online",
         "Gas",
         "Dining",
         "Drug Stores",
