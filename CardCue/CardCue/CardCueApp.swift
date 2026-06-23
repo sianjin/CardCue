@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct CardMapApp: App {
+struct CardCueApp: App {
     @StateObject private var store = CardStore()
     @StateObject private var categoryOrder = CategoryOrderStore()
 

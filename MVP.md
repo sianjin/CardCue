@@ -1,6 +1,6 @@
 # MVP.md
 
-# CardMap MVP
+# CardCue MVP
 
 ## Goal
 

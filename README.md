@@ -1,4 +1,4 @@
-# CardMap
+# CardCue
 
 A simple iOS utility for credit card reward rules.
 

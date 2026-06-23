@@ -1,6 +1,6 @@
 # RULES.md
 
-# CardMap Data Rules
+# CardCue Data Rules
 
 Rules for maintaining `reward_rules.json` and `quarterly_categories.json`.
 

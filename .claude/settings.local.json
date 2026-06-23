@@ -29,7 +29,20 @@
       "Bash(git init *)",
       "Bash(git remote *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(gh api *)",
+      "WebFetch(domain:www.nerdwallet.com)",
+      "Bash(xcodebuild -scheme CardMap -destination 'platform=iOS Simulator,name=iPhone 16' build)",
+      "Bash(xcrun simctl *)",
+      "Bash(xcodebuild -scheme CardMap -destination 'platform=iOS Simulator,name=iPhone 17' build)",
+      "Bash(plutil *)",
+      "WebFetch(domain:www.bilt.com)",
+      "Bash(git *)",
+      "Bash(sed -i '' -e s/CardMap/CardCue/g /Users/sianjin/Documents/Products/CardMap/docs/index.html /Users/sianjin/Documents/Products/CardMap/docs/privacy.html /Users/sianjin/Documents/Products/CardMap/docs/support.html)",
+      "Bash(sed -i '' s/CardMap/CardCue/g /Users/sianjin/Documents/Products/CardMap/README.md /Users/sianjin/Documents/Products/CardMap/CLAUDE.md /Users/sianjin/Documents/Products/CardMap/DATA_MODEL.md /Users/sianjin/Documents/Products/CardMap/MVP.md /Users/sianjin/Documents/Products/CardMap/RULES.md)",
+      "Bash(xcodebuild -project /Users/sianjin/Documents/Products/CardMap/CardMap/CardMap.xcodeproj -scheme CardCue -destination 'platform=iOS Simulator,name=iPhone 17' build)",
+      "Bash(xcodebuild -project /Users/sianjin/Documents/Products/CardMap/CardCue/CardCue.xcodeproj -scheme CardCue -destination 'platform=iOS Simulator,name=iPhone 17' build)"
     ]
   }
 }

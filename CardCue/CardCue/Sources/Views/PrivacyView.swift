@@ -5,7 +5,7 @@ struct PrivacyView: View {
         NavigationStack {
             List {
                 Section {
-                    Text("CardMap stores your card names and notes locally on your device using iOS UserDefaults.")
+                    Text("CardCue stores your card names and notes locally on your device using iOS UserDefaults.")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }

@@ -1,6 +1,6 @@
 # DATA_MODEL.md
 
-# CardMap Data Model
+# CardCue Data Model
 
 ## UserCard
 

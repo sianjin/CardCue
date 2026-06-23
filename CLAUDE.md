@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-# CardMap Development Rules
+# CardCue Development Rules
 
 Read this file before making any code changes.
 
@@ -14,9 +14,9 @@ Update `DATA_MODEL.md` whenever there is a structural change to a model or stora
 
 ## Product Philosophy
 
-CardMap is NOT a fintech platform.
+CardCue is NOT a fintech platform.
 
-CardMap is a small utility app.
+CardCue is a small utility app.
 
 Its goal is to be only slightly better than Apple Notes for managing credit card usage rules.
 
