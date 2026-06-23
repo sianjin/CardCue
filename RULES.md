@@ -34,7 +34,7 @@ The canonical category list lives in `MVP.md`. It is the source of truth.
 - Mark new entries as `[ ]` (unverified) until confirmed against the issuer's official page.
 - To check for drift, run: `python3 -c "import json,re; rules=json.load(open('CardCue/CardCue/Resources/reward_rules.json')); checklist={}; [checklist.setdefault(r['cardName'],set()).add(r['category']) for r in rules]; ..."` — or just diff manually.
 
-Note: `VERIFY_CARDS.md` does NOT include rotating quarterly categories — those live in `quarterly_categories.json` and are verified separately each quarter.
+For rotating cards (Chase Freedom Flex, Discover it Cash Back), also include a `### Rotating 5% Categories` subsection with one entry per quarter per category (format: `YYYYQN – Category: 5%`). When a new quarter is added to `quarterly_categories.json`, add the corresponding entries to `VERIFY_CARDS.md` marked `[ ]` (unverified). Remove past-quarter entries from both files together.
 
 ## Quarterly Rate Verification
 
