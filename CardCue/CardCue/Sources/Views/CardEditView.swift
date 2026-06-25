@@ -79,13 +79,13 @@ struct CardEditView: View {
                     }
                 }
 
-                Section("Note") {
+                Section("Cue") {
                     TextEditor(text: $note)
                         .textInputAutocapitalization(.sentences)
                         .frame(minHeight: 80)
                         .overlay(alignment: .topLeading) {
                             if note.isEmpty {
-                                Text("e.g. No foreign transaction fee")
+                                Text(name.isEmpty ? "e.g. When to use this card" : KnownCards.defaultCue(for: name))
                                     .foregroundStyle(.tertiary)
                                     .padding(.top, 8)
                                     .padding(.leading, 4)

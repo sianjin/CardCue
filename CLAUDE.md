@@ -35,6 +35,8 @@ Users should open the app, find the answer they need in a few seconds, and close
 
 If there is a choice between a simple solution and a powerful solution, always choose the simple solution.
 
+If removing something doesn't make the user's decision harder, remove it.
+
 ## Technology Constraints
 
 Use:

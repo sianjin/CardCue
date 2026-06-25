@@ -169,6 +169,14 @@ Use bundled JSON data.
 
 Update category mappings automatically based on current quarter.
 
+## Design Principle
+
+A user opens the app, glances for 3 seconds, gets their answer, closes it.
+
+If a feature requires more than 10 seconds to find an answer, or more than 1 hour per year to maintain, it does not belong here. At that point the user can figure it out themselves.
+
+If removing something doesn't make the user's decision harder, remove it.
+
 ## Non-Goals
 
 This app does NOT:
@@ -176,7 +184,13 @@ This app does NOT:
 * Analyze spending
 * Connect bank accounts
 * Recommend cards
-* Track benefits
-* Track annual fees
 * Optimize rewards
 * Provide financial advice
+
+The following are explicitly excluded because they fail the 3-second / 1-hour test:
+
+* **Annual fee statistics** — users already know their card's fee; it doesn't help decide which card to use at checkout. Users who want to track it can write it in the Cue field.
+* **Rewards redeemed** — this is the card issuer's job, not ours.
+* **Benefits tracking** — too much manual entry; benefits change too often to maintain accurately.
+* **Offers and promotions** — change too frequently; impossible to keep accurate without a backend.
+* **Credit balance** — requires manual entry or bank sync; high maintenance, zero decision value at checkout.

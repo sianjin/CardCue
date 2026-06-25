@@ -9,8 +9,6 @@ struct QuickReferenceView: View {
 
     @State private var editMode: EditMode = .inactive
 
-    private var currentQuarter: String { QuarterlyCategory.currentQuarterKey() }
-
     private var rawRows: [(category: String, cardName: String, reward: String, isCustom: Bool)] {
         RewardStore.shared.quickReference(for: store.cards)
     }
@@ -18,16 +16,6 @@ struct QuickReferenceView: View {
     private var rows: [(category: String, cardName: String, reward: String, isCustom: Bool)] {
         let rowMap = Dictionary(uniqueKeysWithValues: rawRows.map { ($0.category, $0) })
         return categoryOrder.order.compactMap { rowMap[$0] }
-    }
-
-    private var rotatingCards: [String] {
-        var seen = Set<String>()
-        return RewardStore.shared.quarterlyCategories
-            .filter { $0.quarter == currentQuarter }
-            .map(\.cardName)
-            .filter { name in
-                store.cards.contains(where: { $0.name == name }) && seen.insert(name).inserted
-            }
     }
 
     var body: some View {
@@ -105,23 +93,15 @@ struct QuickReferenceView: View {
 
     private var referenceList: some View {
         List {
-            if !rotatingCards.isEmpty {
-                Section {
-                    HStack(spacing: 6) {
-                        Image(systemName: "arrow.2.circlepath")
-                            .font(.caption)
-                        Text("Rotating: \(rotatingCards.joined(separator: ", ")) — \(currentQuarter)")
-                            .font(.caption)
-                    }
-                    .foregroundStyle(.secondary)
-                    .listRowBackground(Color.clear)
-                    .moveDisabled(true)
-                }
-            }
-
             Section {
                 ForEach(rows, id: \.category) { row in
-                    HStack {
+                    HStack(spacing: 12) {
+                        if let symbol = KnownCards.icon(for: row.category) {
+                            Image(systemName: symbol)
+                                .font(.title3)
+                                .foregroundStyle(.secondary)
+                                .frame(width: 24)
+                        }
                         VStack(alignment: .leading, spacing: 2) {
                             Text(row.category)
                                 .font(.body)
