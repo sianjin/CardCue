@@ -220,6 +220,9 @@ enum KnownCards {
         "U.S. Bank Business Triple Cash Rewards": "e.g. 3% on gas, office supplies, cell service, and dining; no annual fee",
         "U.S. Bank Cash+": "e.g. Must manually select two 5% categories and one 2% category every quarter (5% capped at $2k spend)",
         "U.S. Bank Shopper Cash Rewards": "e.g. Must manually select two retailers for 6% back (up to $1.5k spend/quarter); $95 annual fee (waived first year)",
+        // Stanford FCU
+        "Stanford FCU Tech Card": "e.g. 3x at Amazon and Apple; 2x on dining and groceries; no annual fee; no FTF; requires credit union membership",
+        "Stanford FCU Tech Card – Ambassador": "e.g. +2% cash bonus on all categories; 5x at Amazon/Apple, 4x dining/groceries, 3x everywhere else; no annual fee; no FTF",
         // Wells Fargo
         "Wells Fargo Active Cash": "e.g. Flat 2% cash back on all spending; no annual fee; has 3% FTF",
         "Wells Fargo Autograph": "e.g. 3x on travel, transit, dining, gas/EV charging, streaming, and phone plans; no annual fee; no FTF",

@@ -2113,5 +2113,55 @@
     "cardName": "Costco Anywhere Visa Business by Citi",
     "category": "Hotels – General",
     "rewardText": "3%"
+  },
+  {
+    "cardName": "Stanford FCU Tech Card",
+    "category": "Amazon & Whole Foods",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Stanford FCU Tech Card",
+    "category": "Apple Purchases",
+    "rewardText": "3x"
+  },
+  {
+    "cardName": "Stanford FCU Tech Card",
+    "category": "Dining",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Stanford FCU Tech Card",
+    "category": "Groceries",
+    "rewardText": "2x"
+  },
+  {
+    "cardName": "Stanford FCU Tech Card",
+    "category": "Everything Else",
+    "rewardText": "1x"
+  },
+  {
+    "cardName": "Stanford FCU Tech Card – Ambassador",
+    "category": "Amazon & Whole Foods",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Stanford FCU Tech Card – Ambassador",
+    "category": "Apple Purchases",
+    "rewardText": "5x"
+  },
+  {
+    "cardName": "Stanford FCU Tech Card – Ambassador",
+    "category": "Dining",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Stanford FCU Tech Card – Ambassador",
+    "category": "Groceries",
+    "rewardText": "4x"
+  },
+  {
+    "cardName": "Stanford FCU Tech Card – Ambassador",
+    "category": "Everything Else",
+    "rewardText": "3x"
   }
 ]
