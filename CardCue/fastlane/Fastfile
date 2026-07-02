@@ -33,12 +33,25 @@ platform :ios do
     )
   end
 
-  desc "Submit latest TestFlight build for App Store review"
+  desc "Upload metadata and screenshots to App Store Connect"
   lane :release do
     deliver(
       skip_binary_upload: true,
       skip_screenshots: false,
       skip_metadata: false,
+      submit_for_review: false,
+      automatic_release: false,
+      force: true,
+      ignore_language_directory_validation: true
+    )
+  end
+
+  desc "Submit the app for review"
+  lane :submit do
+    deliver(
+      skip_binary_upload: true,
+      skip_screenshots: true,
+      skip_metadata: true,
       submit_for_review: true,
       automatic_release: false,
       force: true,
