@@ -1,0 +1,13 @@
+CardCue is a lightweight reference app for credit card rewards. Open it, find the right card for your purchase, and close it — in seconds.
+
+Add your cards, write a short cue for each one, and see a quick breakdown of which card earns the most in each category: groceries, dining, travel, gas, streaming, and more.
+
+No accounts. No syncing. No subscriptions. Everything is stored locally on your device.
+
+FEATURES
+• Quick Reference — see all your cards ranked by category at a glance
+• My Cards — save your wallet and write a personal cue for each card
+• Rotating categories — stay on top of quarterly bonus categories (Chase Freedom Flex, Discover it, and more)
+• Works offline, always
+
+CardCue is a simple utility, not a financial platform. It does not access your bank accounts, track your spending, or collect any data.

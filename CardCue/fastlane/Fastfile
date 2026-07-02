@@ -1,0 +1,50 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Build and upload to TestFlight"
+  lane :beta do
+    increment_build_number(xcodeproj: "CardCue.xcodeproj")
+    gym(
+      scheme: "CardCue",
+      project: "CardCue.xcodeproj",
+      export_method: "app-store",
+      clean: true
+    )
+    pilot(skip_waiting_for_build_processing: true)
+  end
+
+  desc "Upload metadata and screenshots to App Store Connect"
+  lane :metadata do
+    deliver(
+      force: true,
+      skip_binary_upload: true,
+      skip_screenshots: true,
+      submit_for_review: false
+    )
+  end
+
+  desc "Upload screenshots to App Store Connect"
+  lane :screenshots do
+    deliver(
+      force: true,
+      skip_binary_upload: true,
+      skip_metadata: true,
+      submit_for_review: false
+    )
+  end
+
+  desc "Submit latest TestFlight build for App Store review"
+  lane :release do
+    deliver(
+      skip_binary_upload: true,
+      skip_screenshots: false,
+      skip_metadata: false,
+      submit_for_review: true,
+      automatic_release: false,
+      force: true,
+      submission_information: {
+        add_id_info_uses_idfa: false
+      }
+    )
+  end
+end
