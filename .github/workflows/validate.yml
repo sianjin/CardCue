@@ -14,8 +14,8 @@ jobs:
 
       - name: Validate JSON files
         run: |
-          python3 -c "import json; json.load(open('CardMap/CardMap/Resources/reward_rules.json'))"
-          python3 -c "import json; json.load(open('CardMap/CardMap/Resources/quarterly_categories.json'))"
+          python3 -c "import json; json.load(open('CardCue/CardCue/Resources/reward_rules.json'))"
+          python3 -c "import json; json.load(open('CardCue/CardCue/Resources/quarterly_categories.json'))"
           echo "JSON files are valid"
 
       - name: Validate category names
