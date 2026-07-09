@@ -42,7 +42,21 @@
       "Bash(sed -i '' -e s/CardMap/CardCue/g /Users/sianjin/Documents/Products/CardMap/docs/index.html /Users/sianjin/Documents/Products/CardMap/docs/privacy.html /Users/sianjin/Documents/Products/CardMap/docs/support.html)",
       "Bash(sed -i '' s/CardMap/CardCue/g /Users/sianjin/Documents/Products/CardMap/README.md /Users/sianjin/Documents/Products/CardMap/CLAUDE.md /Users/sianjin/Documents/Products/CardMap/DATA_MODEL.md /Users/sianjin/Documents/Products/CardMap/MVP.md /Users/sianjin/Documents/Products/CardMap/RULES.md)",
       "Bash(xcodebuild -project /Users/sianjin/Documents/Products/CardMap/CardMap/CardMap.xcodeproj -scheme CardCue -destination 'platform=iOS Simulator,name=iPhone 17' build)",
-      "Bash(xcodebuild -project /Users/sianjin/Documents/Products/CardMap/CardCue/CardCue.xcodeproj -scheme CardCue -destination 'platform=iOS Simulator,name=iPhone 17' build)"
+      "Bash(xcodebuild -project /Users/sianjin/Documents/Products/CardMap/CardCue/CardCue.xcodeproj -scheme CardCue -destination 'platform=iOS Simulator,name=iPhone 17' build)",
+      "Bash(xcodebuild -project /Users/sianjin/Documents/Products/CardMap/CardCue/CardCue.xcodeproj -scheme CardCue -configuration Release -destination 'generic/platform=iOS' archive -archivePath /tmp/CardCue.xcarchive)",
+      "Bash(grep -v \"^$\")",
+      "Bash(xargs ls)",
+      "Skill(fastlane-skill:setup-fastlane)",
+      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/sianjin/Desktop/quick_reference.png\" \"/Users/sianjin/Desktop/my_cards.png\" \"/Users/sianjin/Desktop/card_edit.png\")",
+      "Bash(mkdir -p \"/Users/sianjin/Documents/Products/CardMap/CardCue/fastlane/screenshots/en-US\")",
+      "Bash(cp \"/Users/sianjin/Desktop/my_cards.png\" \"/Users/sianjin/Documents/Products/CardMap/CardCue/fastlane/screenshots/en-US/01_MyCards.png\")",
+      "Bash(cp \"/Users/sianjin/Desktop/quick_reference.png\" \"/Users/sianjin/Documents/Products/CardMap/CardCue/fastlane/screenshots/en-US/02_QuickReference.png\")",
+      "Bash(cp \"/Users/sianjin/Desktop/card_edit.png\" \"/Users/sianjin/Documents/Products/CardMap/CardCue/fastlane/screenshots/en-US/03_CardEdit.png\")",
+      "Bash(security find-identity *)",
+      "Bash(fastlane ios *)",
+      "Bash(sips *)",
+      "Bash(gh run *)",
+      "Bash(echo \"exit: $?\")"
     ]
   }
 }
