@@ -61,3 +61,13 @@ Rules for `quarterly_categories.json`:
 - Only include the current quarter and future confirmed quarters. Remove past quarters when they expire — stale data adds noise.
 - Do NOT add a future quarter until the card issuer officially announces it. Chase Freedom Flex and Discover typically announce one quarter at a time; do not fabricate or project future quarters.
 - Each category string must match the canonical list exactly (same rules as `reward_rules.json`).
+
+## User Data Persistence Rules
+
+User-saved cards and cue notes live in `UserDefaults` under fixed storage keys (`"user_cards"` in `CardStore`, `"category_order"` in `CategoryOrderStore`). This is the user's only copy of their data — there is no cloud backup (by design, see `CLAUDE.md`). Losing it on an app update would be a data-loss disaster for the user.
+
+- NEVER rename or remove the `storageKey` string in `CardStore` or `CategoryOrderStore` (`"user_cards"`, `"category_order"`). A changed key means `UserDefaults.standard.data(forKey:)` returns nil and every existing user's cards and notes silently vanish on update.
+- NEVER change the on-disk shape of `UserCard` (or any type encoded into `user_cards`) in a way that breaks decoding old saved data. Adding a field is safe only if it has a default and decoding still succeeds when the field is absent. Renaming or removing a field is NOT safe unless you keep the old key decodable.
+- Follow the existing migration-shim pattern in `UserCard.swift` (custom `CodingKeys` including retired keys like `customCategory`, `pinned`, plus a custom `init(from:)` that maps old fields to new ones) whenever `UserCard`'s structure changes. Do not delete that shim as "dead code" — it is what keeps old users' data readable.
+- Before merging any change to `CardStore`, `CategoryOrderStore`, or `UserCard`, verify: decoding a `UserCard` blob encoded by the previous app version still succeeds and preserves `name`, `note`, and `customCategories`.
+- If a storage key ever must change, migrate forward instead of switching cold: read the old key, decode, write under the new key, then remove the old key. Never just start writing to a new key and abandon the old one.
