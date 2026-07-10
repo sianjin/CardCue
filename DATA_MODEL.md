@@ -77,7 +77,21 @@ Only include current and officially announced future quarters. See `RULES.md`.
 - Category display order — `UserDefaults`, key `"category_order"`, managed by `CategoryOrderStore`
 - `RewardRule` and `QuarterlyCategory` — bundled JSON, read-only at runtime
 
-No databases. No cloud sync. No accounts.
+No databases. No accounts.
+
+### iCloud backup (uninstall/reinstall only)
+
+`CloudBackupStore` mirrors the `user_cards` and `category_order` `UserDefaults` keys to
+`NSUbiquitousKeyValueStore` on every save, as a private per-account backup — not multi-device sync.
+
+- `UserDefaults` is always the source of truth for reads while local data exists.
+- On `load()`, iCloud is only consulted when the local key is empty (fresh install), and the
+  restored value is written back to `UserDefaults` immediately.
+- Once local data exists, incoming iCloud values are never applied automatically, so two devices
+  signed into the same iCloud account never overwrite each other's data — each device just keeps
+  pushing its own state as its own backup.
+- Requires the `com.apple.developer.ubiquity-kvstore-identifier` entitlement
+  (`CardCue/CardCue.entitlements`).
 
 ## Source Files
 

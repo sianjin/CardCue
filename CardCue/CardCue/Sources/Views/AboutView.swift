@@ -10,7 +10,7 @@ struct AboutView: View {
                 }
 
                 Section("About") {
-                    Text("CardCue helps you get the most from your credit cards. Save your cards, add notes, and instantly see which card to use for any spending category. Drag to rank your favorites. No accounts, no tracking, no cloud.")
+                    Text("CardCue helps you get the most from your credit cards. Save your cards, add notes, and instantly see which card to use for any spending category. Drag to rank your favorites. No accounts, no tracking, no servers.")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }

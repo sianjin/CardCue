@@ -49,12 +49,16 @@ Use:
 * UserDefaults
 * Codable
 * Bundled JSON
+* `NSUbiquitousKeyValueStore` — allowed only as a silent, private per-account backup so `UserCard`
+  and category order survive app deletion/reinstall. Pull from iCloud only when local storage is
+  empty (fresh install); never apply incoming iCloud changes once local data exists. No multi-device
+  sync, no UI, no user-visible toggle. See `DATA_MODEL.md`.
 
 Avoid:
 
 * Backend
 * Database servers
-* Cloud sync
+* Multi-device cloud sync (live sync between devices, conflict resolution, merge UI)
 * Firebase
 * Plaid
 * Bank APIs
@@ -79,7 +83,7 @@ Do NOT add:
 * Push notifications
 * Social features
 * User accounts
-* Cloud backup
+* Multi-device cloud sync or a cloud backup UI/toggle (see the iCloud backup carve-out above — that's an invisible reinstall-safety net, not a feature)
 * Premium subscriptions
 
 ## Success Criteria

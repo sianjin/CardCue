@@ -5,7 +5,7 @@ struct PrivacyView: View {
         NavigationStack {
             List {
                 Section {
-                    Text("CardCue stores your card names and notes locally on your device using iOS UserDefaults.")
+                    Text("CardCue stores your card names and notes locally on your device. If iCloud is enabled, a private backup is also kept in your iCloud account so your data survives reinstalling the app. CardCue has no servers and never sees your data.")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }

@@ -23,6 +23,7 @@
 		AA000014 /* KnownCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100014 /* KnownCards.swift */; };
 		AA000015 /* AppIconPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100015 /* AppIconPreview.swift */; };
 		AA000016 /* CategoryOrderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100016 /* CategoryOrderStore.swift */; };
+		AA000017 /* CloudBackupStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100017 /* CloudBackupStore.swift */; };
 		AA000020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA100020 /* Assets.xcassets */; };
 		AA000021 /* reward_rules.json in Resources */ = {isa = PBXBuildFile; fileRef = AA100021 /* reward_rules.json */; };
 		AA000022 /* quarterly_categories.json in Resources */ = {isa = PBXBuildFile; fileRef = AA100022 /* quarterly_categories.json */; };
@@ -46,10 +47,12 @@
 		AA100014 /* KnownCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownCards.swift; sourceTree = "<group>"; };
 		AA100015 /* AppIconPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconPreview.swift; sourceTree = "<group>"; };
 		AA100016 /* CategoryOrderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryOrderStore.swift; sourceTree = "<group>"; };
+		AA100017 /* CloudBackupStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudBackupStore.swift; sourceTree = "<group>"; };
 		AA100020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA100021 /* reward_rules.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reward_rules.json; sourceTree = "<group>"; };
 		AA100022 /* quarterly_categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quarterly_categories.json; sourceTree = "<group>"; };
 		AA100023 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		AA100024 /* CardCue.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CardCue.entitlements; sourceTree = "<group>"; };
 		AA200001 /* CardCue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardCue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,6 +80,7 @@
 			children = (
 				AA100001 /* CardCueApp.swift */,
 				AA100023 /* PrivacyInfo.xcprivacy */,
+				AA100024 /* CardCue.entitlements */,
 				AA400002 /* Sources */,
 				AA400005 /* Resources */,
 			);
@@ -102,6 +106,7 @@
 				AA100013 /* RewardStore.swift */,
 				AA100014 /* KnownCards.swift */,
 				AA100016 /* CategoryOrderStore.swift */,
+				AA100017 /* CloudBackupStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 				AA000014 /* KnownCards.swift in Sources */,
 				AA000015 /* AppIconPreview.swift in Sources */,
 				AA000016 /* CategoryOrderStore.swift in Sources */,
+				AA000017 /* CloudBackupStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CardCue/CardCue.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -384,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CardCue/CardCue.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;

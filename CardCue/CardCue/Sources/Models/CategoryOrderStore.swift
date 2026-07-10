@@ -38,12 +38,19 @@ final class CategoryOrderStore: ObservableObject {
     }
 
     private func load() {
-        if let saved = UserDefaults.standard.stringArray(forKey: storageKey) {
-            order = saved
+        let localSaved = UserDefaults.standard.stringArray(forKey: storageKey)
+        guard let saved = localSaved ?? CloudBackupStore.restoreStringsIfLocalEmpty(forKey: storageKey) else {
+            return
+        }
+        order = saved
+        if localSaved == nil {
+            // Restored from iCloud backup on a fresh install; persist locally too.
+            UserDefaults.standard.set(saved, forKey: storageKey)
         }
     }
 
     private func save() {
         UserDefaults.standard.set(order, forKey: storageKey)
+        CloudBackupStore.mirror(order, forKey: storageKey)
     }
 }
