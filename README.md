@@ -12,7 +12,7 @@ Save your cards, add notes, and instantly see which card to use for any spending
 
 ## What it doesn't do
 
-No accounts. No tracking. No cloud. No financial data access. No spending analysis. No AI.
+No accounts. No tracking. No servers. No financial data access. No spending analysis. No AI. (A private iCloud backup keeps your data safe across reinstalls — see `DATA_MODEL.md`.)
 
 ## Stack
 

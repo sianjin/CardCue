@@ -64,7 +64,7 @@ Rules for `quarterly_categories.json`:
 
 ## User Data Persistence Rules
 
-User-saved cards and cue notes live in `UserDefaults` under fixed storage keys (`"user_cards"` in `CardStore`, `"category_order"` in `CategoryOrderStore`). This is the user's only copy of their data — there is no cloud backup (by design, see `CLAUDE.md`). Losing it on an app update would be a data-loss disaster for the user.
+User-saved cards and cue notes live in `UserDefaults` under fixed storage keys (`"user_cards"` in `CardStore`, `"category_order"` in `CategoryOrderStore`), mirrored to a private iCloud Key-Value backup restored only on fresh install (see `DATA_MODEL.md` and the iCloud carve-out in `CLAUDE.md`). `UserDefaults` is still the primary, always-authoritative copy — the iCloud copy is a silent safety net, not a live sync target. Losing the `UserDefaults` copy on an app update would still be a data-loss disaster for most users, since the iCloud restore path only fires when local storage is empty.
 
 - NEVER rename or remove the `storageKey` string in `CardStore` or `CategoryOrderStore` (`"user_cards"`, `"category_order"`). A changed key means `UserDefaults.standard.data(forKey:)` returns nil and every existing user's cards and notes silently vanish on update.
 - NEVER change the on-disk shape of `UserCard` (or any type encoded into `user_cards`) in a way that breaks decoding old saved data. Adding a field is safe only if it has a default and decoding still succeeds when the field is absent. Renaming or removing a field is NOT safe unless you keep the old key decodable.
