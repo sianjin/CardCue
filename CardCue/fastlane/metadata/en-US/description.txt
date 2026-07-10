@@ -2,7 +2,7 @@ CardCue is a lightweight reference app for credit card rewards. Open it, find th
 
 Add your cards, write a short cue for each one, and see a quick breakdown of which card earns the most in each category: groceries, dining, travel, gas, streaming, and more.
 
-No accounts. No syncing. No subscriptions. Everything is stored locally on your device.
+No accounts. No subscriptions. No servers. Your data stays on your device, with a private iCloud backup so it's safe if you delete and reinstall the app.
 
 FEATURES
 • Quick Reference — see all your cards ranked by category at a glance

@@ -1,1 +1,1 @@
-Initial release.
+Your cards and notes are now privately backed up to iCloud, so they're safe even if you delete and reinstall the app.
