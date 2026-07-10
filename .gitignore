@@ -22,4 +22,4 @@ DerivedData/
 # Fastlane build artifacts
 *.ipa
 *.dSYM.zip
-fastlane/report.xml
+**/fastlane/report.xml
