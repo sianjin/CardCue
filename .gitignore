@@ -18,3 +18,8 @@ DerivedData/
 # Swift Package Manager
 .build/
 *.resolved
+
+# Fastlane build artifacts
+*.ipa
+*.dSYM.zip
+fastlane/report.xml
