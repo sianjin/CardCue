@@ -27,6 +27,9 @@ struct QuickReferenceView: View {
                     noRulesState
                 } else {
                     referenceList
+                        .onAppear {
+                            ReviewRequester.requestReviewAfterQuickReferenceUse(cardCount: store.cards.count)
+                        }
                 }
             }
             .navigationTitle("Quick Reference")

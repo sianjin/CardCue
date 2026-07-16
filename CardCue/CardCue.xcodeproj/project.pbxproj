@@ -24,6 +24,7 @@
 		AA000015 /* AppIconPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100015 /* AppIconPreview.swift */; };
 		AA000016 /* CategoryOrderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100016 /* CategoryOrderStore.swift */; };
 		AA000017 /* CloudBackupStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100017 /* CloudBackupStore.swift */; };
+		AA000018 /* ReviewRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100018 /* ReviewRequester.swift */; };
 		AA000020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA100020 /* Assets.xcassets */; };
 		AA000021 /* reward_rules.json in Resources */ = {isa = PBXBuildFile; fileRef = AA100021 /* reward_rules.json */; };
 		AA000022 /* quarterly_categories.json in Resources */ = {isa = PBXBuildFile; fileRef = AA100022 /* quarterly_categories.json */; };
@@ -48,6 +49,7 @@
 		AA100015 /* AppIconPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconPreview.swift; sourceTree = "<group>"; };
 		AA100016 /* CategoryOrderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryOrderStore.swift; sourceTree = "<group>"; };
 		AA100017 /* CloudBackupStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudBackupStore.swift; sourceTree = "<group>"; };
+		AA100018 /* ReviewRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequester.swift; sourceTree = "<group>"; };
 		AA100020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA100021 /* reward_rules.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reward_rules.json; sourceTree = "<group>"; };
 		AA100022 /* quarterly_categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quarterly_categories.json; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				AA100014 /* KnownCards.swift */,
 				AA100016 /* CategoryOrderStore.swift */,
 				AA100017 /* CloudBackupStore.swift */,
+				AA100018 /* ReviewRequester.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				AA000015 /* AppIconPreview.swift in Sources */,
 				AA000016 /* CategoryOrderStore.swift in Sources */,
 				AA000017 /* CloudBackupStore.swift in Sources */,
+				AA000018 /* ReviewRequester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
