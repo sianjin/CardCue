@@ -1,1 +1,1 @@
-Your cards and notes are now privately backed up to iCloud, so they're safe even if you delete and reinstall the app.
+Small polish: the app now remembers which tab you were on, and adding or deleting a card gives a subtle haptic tap.
