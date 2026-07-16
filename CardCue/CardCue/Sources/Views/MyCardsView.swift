@@ -8,6 +8,7 @@ struct MyCardsView: View {
 
     @State private var showingAdd = false
     @State private var editingCard: UserCard? = nil
+    @State private var deleteCount = 0
 
     var body: some View {
         NavigationStack {
@@ -49,6 +50,7 @@ struct MyCardsView: View {
             .sheet(item: $editingCard) { card in
                 CardEditView(existing: card) { updated in store.update(updated) }
             }
+            .sensoryFeedback(.impact, trigger: deleteCount)
         }
     }
 
@@ -77,13 +79,17 @@ struct MyCardsView: View {
                         Button(role: .destructive) {
                             if let index = store.cards.firstIndex(where: { $0.id == card.id }) {
                                 store.delete(at: IndexSet([index]))
+                                deleteCount += 1
                             }
                         } label: {
                             Label("Delete", systemImage: "trash")
                         }
                     }
             }
-            .onDelete { store.delete(at: $0) }
+            .onDelete {
+                store.delete(at: $0)
+                deleteCount += 1
+            }
             .onMove { store.move(from: $0, to: $1) }
         }
     }

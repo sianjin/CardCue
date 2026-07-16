@@ -14,6 +14,8 @@ struct CardEditView: View {
 
     private let existing: UserCard?
 
+    @State private var didSave = false
+
     init(existing: UserCard? = nil, onSave: @escaping (UserCard) -> Void) {
         self.existing = existing
         self.title = existing == nil ? "New Card" : "Edit Card"
@@ -111,11 +113,13 @@ struct CardEditView: View {
                             customCategories: isConfigurable ? customCategories.filter { !$0.isEmpty } : []
                         )
                         onSave(card)
+                        didSave = true
                         dismiss()
                     }
                     .disabled(!isValid)
                 }
             }
+            .sensoryFeedback(.success, trigger: didSave)
             .sheet(isPresented: $showingCardPicker) {
                 CardPickerView(selected: $name) {
                     if !KnownCards.isConfigurable(name) { customCategories = [] }
